@@ -1,10 +1,8 @@
 /*
-TODO: Problem 4 - Write a program that concatenates the two strings "Hello" and "World" to form "HelloWorld".
+TODO: Problem-4: In the scorching heat, I placed my hand on my forehead and felt a high fever. At this moment, I have declared a variable named `temperature`, which has a value of 102.5. Now, if I check this variable using `typeof`, what type of variable will it be?
  */
 
 //Solution:
 
-let string1 = "Hello";
-let string2 = "World";
-let result = string1 + string2;
-console.log(result); // Outputs: "HelloWorld"
+let temperature = 102.5;
+console.log(typeof temperature); // Output: "number"

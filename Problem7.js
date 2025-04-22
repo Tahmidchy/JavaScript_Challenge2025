@@ -1,12 +1,9 @@
-/*
-TODO: Problem - 7:If you divide 8 by 3, what is the quotient and remainder?
-*/
+/* 
+TODO: Problem-7: Declare a variable named age to hold your current age, then print its value to the console. Next, assign a new value to the age variable and print it again.
+ */
 
-// Solution :
-
-let firstNumber = 8;
-let secondNumber = 3;
-let quotient = firstNumber / secondNumber; // quotient is 2.6666666666666334
-let remainder = firstNumber % secondNumber; // remainder is 2
-console.log("Quotient is: ", quotient);
-console.log("Remainder is: ", remainder);
+//Solution
+let age = 25;
+console.log(age);
+age = 30;
+console.log(age);
