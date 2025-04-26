@@ -1,8 +1,13 @@
-/*
-TODO: Problem number-1 : Write a program that uses "typeof" to check a variable's type. For instance, create a variable named price and assign it the value 555. Then, determine the type of the variable.
- */
+/* 
+TODO: Problem-1: You and your younger brother are having an eating competition. You ate 7 singaras, and your younger brother ate 5. Now do a programming comparison and see who ate more?
+*/
 
-//Solution:
+//Solution: 
 
-let price = 555;
-console.log(typeof price); // Output: "number"
+let yourSingaras = 7;
+let yourBrotherSingaras = 5;
+if (yourSingaras > yourBrotherSingaras) {
+    console.log("You ate more singaras"); // Output: You ate more singaras
+} else if (yourBrotherSingaras > yourSingaras) {
+    console.log("Your brother ate more singaras");
+}

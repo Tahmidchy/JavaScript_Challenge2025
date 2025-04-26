@@ -1,20 +1,20 @@
 /*
-TODO: Problem - 10: Suppose you consume 4 kg of rice each day. You have 12 maunds of rice, which is equivalent to 480 kg. How many days will your 12 maunds of rice last? Additionally, considering that 1 month is equal to 30 days, how many months will the 12 maunds of rice last you?
- */
+TODO: Problem-10: Two variables are taken, namely apple and orange. Of these two variables, the value of one is 200 taka and the value of the other is 300 taka. Now find out through programming whether the price of an apple and an orange is equal or higher?
+*/
 
-// Solution:
+//Solution: 
 
-let totalRice = 480; // in kg
-let dailyConsumption = 4; // in kg
-let daysInMonth = 30; // number of days in Month
+let apple_price = 200;
+let orange_price = 300;
+if (apple_price >= orange_price) {
+    console.log("The price of an apple is equal to or higher than an orange");
+}else if (orange_price >= apple_price) {
+    console.log("The price of an orange is equal to or higher than an apple");
+}else{
+    console.log("The price of an apple and an orange is not equal");
+}
 
-// calculate the number of days the rice will last
+//Solution 2
 
-let daysRiceWillLast = totalRice / dailyConsumption;
-
-// calculate the number of months the rice will last
-
-let monthsRiceWillLast = daysRiceWillLast / daysInMonth;
-
-console.log(`Your 12 maunds of rice will last ${daysRiceWillLast} days.`);
-console.log(`That is approximately ${monthsRiceWillLast.toFixed(2)} months.`);
+console.log(apple_price > orange_price);
+console.log(apple_price < orange_price);

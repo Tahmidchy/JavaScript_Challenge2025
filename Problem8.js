@@ -1,13 +1,14 @@
 /*
-TODO: Problem 8 - If you divide 50 by 9, what is the remainder?
- */
-
+TODO: Problem-8: Your younger brother is 10 years old, and you are 15 years old. Now write a program to check whether you and your younger brother are younger or the same age as you.
+*/
 //Solution:
 
-let dividend = 50; // the number to be divided
-let divisor = 9;   // the number to divide by
-
-let remainder = dividend % divisor; // calculate the remainder
-
-console.log(`The remainder when ${dividend} is divided by ${divisor} is ${remainder}.`);
-// Output: The remainder when 50 is divided by 9 is 1.
+let brother_age = 10;
+let my_age = 15;
+if (my_age > brother_age) {
+    console.log("You are older than your brother");
+} else if( my_age == brother_age) {
+    console.log("You and your brother are of the same age");
+}else {
+    console.log("You are younger than your brother");
+}

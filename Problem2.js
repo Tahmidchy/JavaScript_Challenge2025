@@ -1,7 +1,13 @@
 /*
-TODO: Problem-2: Declare a variable named "learning" and set its value to true. Use the typeof operator to determine its output.
- */
-//Solution: 
+TODO: There are 45 students in your class and 50 students in the class next to you. Now use programming to find out which class has more students.
+*/
 
-let learning = true;
-console.log(typeof learning); // Output: boolean
+// Solution: 
+
+let myClassStudent = 45;
+let nextClassStudent = 50;
+if (myClassStudent > nextClassStudent) {
+    console.log("My class has more students");
+} else if (nextClassStudent > myClassStudent) {
+    console.log("The next class has more students"); // This will be printed
+}

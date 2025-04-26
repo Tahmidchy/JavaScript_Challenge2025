@@ -1,9 +1,15 @@
 /* 
-TODO: Problem-7: Declare a variable named age to hold your current age, then print its value to the console. Next, assign a new value to the age variable and print it again.
- */
+TODO: Problem-7:You and your friend have taken the exam. Now, when the results are given, it is seen that you got 45 marks and your friend got 97 marks. Now, find out by programming whether your friend got fewer marks than you?
+*/
 
-//Solution
-let age = 25;
-console.log(age);
-age = 30;
-console.log(age);
+// Solution: 
+
+let your_marks = 45;
+let friend_marks = 97;
+if (friend_marks < your_marks) {
+    console.log("Your friend got fewer marks than you");
+}else if (friend_marks > your_marks){
+    console.log("Your friend got more marks than you");
+}else{
+    console.log("You both got the same marks");
+}
