@@ -1,13 +1,12 @@
 /*
-TODO: Problem-6: Check if 20 is less than or equal to 15? Check if 20 is less than or equal to 15?
+TODO: Problem-6: If the temperature is more than 30 degrees, you will turn on the air conditioner. If it is less, you will sleep with a blanket wrapped around you. Write a program for this.
 */
 
-// Solution :
+// Solution: 
 
-let num1 = 20;
-let num2 = 15;
-if (num1 <= num2) {
-    console.log(`${num1} is less than or equal to ${num2}`);
-}else {
-    console.log(`${num1} is greater than ${num2}`);
+const temperature = 30;
+if( temperature >= 30){
+    console.log("Turn on the air conditioner");
+} else{
+    console.log("Sleep with a blanket");
 }

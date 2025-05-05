@@ -1,13 +1,12 @@
 /*
-TODO: There are 45 students in your class and 50 students in the class next to you. Now use programming to find out which class has more students.
+TODO: Problem-2: A mobile application will display "Welcome!" as the output if it is successful in logging in and "Get Lost" if it fails. Write a program for this condition.
 */
 
-// Solution: 
+//Solution: 
 
-let myClassStudent = 45;
-let nextClassStudent = 50;
-if (myClassStudent > nextClassStudent) {
-    console.log("My class has more students");
-} else if (nextClassStudent > myClassStudent) {
-    console.log("The next class has more students"); // This will be printed
+const loginStatus = true;
+if(loginStatus == true){
+    console.log("Welcome!");
+} else {
+    console.log("Get Lost");
 }

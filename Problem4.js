@@ -1,14 +1,12 @@
-/* 
-TODO: You have set a target of saving 100 taka, but you have been able to save 95 taka till now. Now write the program. Have you been able to meet your target, or have you not been able to save, or have you been able to save more than your target?
+/*
+TODO: Problem-4: Suppose your father gives you a condition that if you score more than 80 marks in the exam, he will buy you a bike, and if you score less than that, he will not buy you a bike. Now you write a program based on this condition, and note that you scored 85 in the exam.
 */
+
 //Solution: 
 
-let my_Target = 100;
-let my_Savings = 95;
-let my_Status = "Not able to save"; // default status
-if (my_Savings >= my_Target) {
-    my_Status = "Met the target";
-    console.log(`i can full fill my target of ${my_Target} taka`);
-}else{
-    console.log(my_Status);
-}
+const your_score = 85; // Your score in the exam
+ if(your_score > 80){
+    console.log("Your father will buy you a bike");
+ } else{
+    console.log("Your father will not buy you a bike");
+ }

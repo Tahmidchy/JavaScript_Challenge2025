@@ -1,18 +1,13 @@
 /*
-TODO: Problem-5: Write a program to find out whether 10 and 7 are equal or unequal.
+TODO: Problem-5: If the movie show is before 9 pm, then you will go to watch the movie. And if it is later, then you will go to sleep. Write a program about this.
 */
 
-//Solution: 
+// Solution: 
 
-let num1 = 10;
-let num2 = 7;
-if(num1 == num2){
-    console.log("10 and 7 are equal");
- } else if ( num1 != num2){
-    console.log("10 and 7 are unequal");
- }
+const showMovieTime = 9;
 
- // Second Solution 
-
- console.log(num1!= num2); // this condition only say our statement are true or false output- true.
- console.log(num1 == num2); // this condition only say our statement are true or false output are -false
+if( showMovieTime == 9){
+    console.log("I will go to watch the movie");
+} else{
+    console.log("I will go to sleep");
+}

@@ -1,19 +1,12 @@
 /*
-TODO: Problem-3: You and your friend got the same score in the exam, 75. Now you will program to find out whether you got more or fewer marks than your friend, or both of you got the same marks.
- */
+TODO: Problem-3: If you run 5 kilometers, I will give you chocolate. If you don't run, you will get fat. Write a program for this condition.
+*/
 
-//Solution: 
+// Solution: 
 
-let your_score = 75;
-let friend_score = 75;
-
-if (your_score > friend_score) {
-    result = "You get more marks than your friend.";
-    console.log(result);
-} else if( your_score < friend_score) {
-    result = "You get fewer marks than your friend.";
-    console.log(result);
-}else if(your_score <= friend_score){
-    result = "You get the same marks as your friend."; 
-    console.log(result); // Output: You get the same marks as your friend.
+const runingOutside = true;
+if(runingOutside == true){
+    console.log("You will get chocolate");
+} else{
+    console.log("You will get fat");
 }

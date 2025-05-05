@@ -1,14 +1,13 @@
 /*
-TODO: Problem-8: Your younger brother is 10 years old, and you are 15 years old. Now write a program to check whether you and your younger brother are younger or the same age as you.
+TODO:Problem-8: Write a program that checks whether a student is eligible to get admitted to a university. The condition is that the math score must be more than 80 or the English score must be more than 85. If neither of these is true, it will say that I will marry you.
 */
-//Solution:
 
-let brother_age = 10;
-let my_age = 15;
-if (my_age > brother_age) {
-    console.log("You are older than your brother");
-} else if( my_age == brother_age) {
-    console.log("You and your brother are of the same age");
-}else {
-    console.log("You are younger than your brother");
+//Solution: 
+
+const mathScore = 90;
+const englishScore = 80;
+if(mathScore > 80 || englishScore > 85 == true){
+    console.log("You are eligible to get admitted to the university.");
+} else{
+    console.log("I will marry you.");
 }

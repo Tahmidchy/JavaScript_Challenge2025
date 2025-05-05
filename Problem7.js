@@ -1,15 +1,11 @@
-/* 
-TODO: Problem-7:You and your friend have taken the exam. Now, when the results are given, it is seen that you got 45 marks and your friend got 97 marks. Now, find out by programming whether your friend got fewer marks than you?
+/*
+TODO: Problem-7: Write a program that checks if you are over 18 years old and over 60 inches tall, then push the car, and if not, sit in the car.
 */
 
-// Solution: 
-
-let your_marks = 45;
-let friend_marks = 97;
-if (friend_marks < your_marks) {
-    console.log("Your friend got fewer marks than you");
-}else if (friend_marks > your_marks){
-    console.log("Your friend got more marks than you");
-}else{
-    console.log("You both got the same marks");
+const my_age = 25;
+const my_height = 72;
+if(my_age > 18 && my_height > 60) {
+    console.log("You can push the car");
+} else{
+    console.log("You can sit in the car");
 }

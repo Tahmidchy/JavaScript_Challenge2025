@@ -1,13 +1,12 @@
-/* 
-TODO: Problem-1: You and your younger brother are having an eating competition. You ate 7 singaras, and your younger brother ate 5. Now do a programming comparison and see who ate more?
+/*
+TODO: Problem-1: Your mother has given you a condition that if you come home before 6 pm, she will feed you an evening snack, and if you are late, she will punish you. Solve the code with this condition.
 */
+// Solution: 
 
-//Solution: 
+let time = 6;
 
-let yourSingaras = 7;
-let yourBrotherSingaras = 5;
-if (yourSingaras > yourBrotherSingaras) {
-    console.log("You ate more singaras"); // Output: You ate more singaras
-} else if (yourBrotherSingaras > yourSingaras) {
-    console.log("Your brother ate more singaras");
+if (time <= 6) {
+    console.log("You will get an evening snack");
+} else {
+    console.log("You will be punished");
 }
