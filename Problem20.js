@@ -1,12 +1,14 @@
 /*
-TODO: Problem-20: Write a program and see if "test" and "TEST" are equal if "test" == "TEST" and "test" === "TEST". What will be the output?
+TODO: Problem-20: Write a program that checks, if the temperature is less than 0 degrees, it will say "Ice", if it is between 0 and 20, it will say "Cool Cool", and if it is more than 20, it will say "Hot Hot".
 */
 
 //Solution: 
 
-let str1 = "test";
-let str2 = "TEST";
-console.log(str1 == str2); // false
-console.log(str1 === str2); // false 
-
-//Explain: case sensitive string comparison in JavaScript. The == operator checks for equality in value, while the === operator checks for equality in both value and type. In this case, "test" and "TEST" are not equal in value or type, so both comparisons return false.
+const temperature = 25; // Replace with your temperature value
+if (temperature < 0) {
+    console.log("Ice");
+} else if (temperature >= 0 && temperature <= 20) {
+    console.log("Cool Cool");
+} else {
+    console.log("Hot Hot");
+}

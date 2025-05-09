@@ -1,20 +1,15 @@
 /*
-TODO: Problem-10: Two variables are taken, namely apple and orange. Of these two variables, the value of one is 200 taka and the value of the other is 300 taka. Now find out through programming whether the price of an apple and an orange is equal or higher?
+TODO: Problem-10: Write a program to see if a job candidate can take the exam. The conditions for the exam are - the job candidate must be under 30 years of age and have at least 2 years of experience.
 */
 
-//Solution: 
+// Solution: 
 
-let apple_price = 200;
-let orange_price = 300;
-if (apple_price >= orange_price) {
-    console.log("The price of an apple is equal to or higher than an orange");
-}else if (orange_price >= apple_price) {
-    console.log("The price of an orange is equal to or higher than an apple");
-}else{
-    console.log("The price of an apple and an orange is not equal");
+const candidate_age = 25;
+const candidate_experience = 3;
+const min_age = 30;
+const min_experience = 2;
+if( candidate_age < min_age && candidate_experience >= min_experience ){
+    console.log("Candidate is eligible for the exam.");
+} else{
+    console.log("Candidate is not eligible for the exam.");
 }
-
-//Solution 2
-
-console.log(apple_price > orange_price);
-console.log(apple_price < orange_price);

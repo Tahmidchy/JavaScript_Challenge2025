@@ -1,9 +1,16 @@
 /*
-TODO: Problem-11: You read 10 books, and your friend also read 10 books. Now, check through programming whether you have both read the same number of books?
+TODO: Problem-11: If you have more than 12 eggs in your fridge or don't have a chicken, then you should cook egg korma or eat bread and bananas.
 */
 
-// Solution: 
+//Solution: 
 
-let books_read = 10;
-let friend_books_read = 10;
-console.log(books_read === friend_books_read); // Output: true
+const eggs = 9;
+const hasChicken = false;
+
+if(eggs > 12 ||  hasChicken) {
+    console.log("Cook egg korma");
+} else if( eggs <= 12 && hasChicken) {
+    console.log("Cook chicken Korma");
+}else{
+    console.log("Eat bread and bananas");
+}

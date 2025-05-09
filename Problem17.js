@@ -1,11 +1,12 @@
-/* 
-TODO: Problem-17: Suppose between the two strings "JavaScript" and 'JavaScript', if "JavaScript" == 'JavaScript' and "JavaScript" === 'JavaScript', will the same output be produced? If so, can you explain this?
+/*
+TODO: Problem-17: If someone's bank account balance is less than 1000 taka, then it will say "Deposit money". If the bank account balance is between 1000 and 5000 taka, then it will say "Enjoy your life", and if it is more than 5000 taka, then it will say "Marry me, you are a great man".
 */
 
-// Solution: 
-
-let str1 = "JavaScript";
-let str2 = 'JavaScript';
-console.log(str1 == str2); // true
-console.log(str1 === str2); // true
-// Explanation: In JavaScript, the '==' operator checks for equality in value, while the '===' operator checks for equality in both value and type. Since both strings have the same value and type,
+const balance = 10000;
+if (balance <= 1000) {
+    console.log("Deposit money");
+} else if (balance <= 5000) {
+    console.log("Enjoy your life");
+} else {
+    console.log("Marry me, you are a Rich man");
+}

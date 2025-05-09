@@ -1,13 +1,15 @@
 /*
-TODO: Problem-14: Your name is "Rahim" and your friend's name is "Karim". Check if your name is the same as your friend's name.
+TODO: Problem-14: If the price of the shirt is more than 1000 taka and you have a coupon, you will be given a 20% discount. If none of the above conditions are met, you will have to pay the price written on the product.
 */
 
-//Solution: 
+// Solution: 
 
-let my_name = "Rahim";
-let friend_name = "Karim";
-if (my_name === friend_name) {
-    console.log("Your name is the same as your friend's name.");
+let price = 1200;
+let coupon = true;
+if (price > 1000 && coupon == true) {
+    const discount = price * 0.2;
+    const finalPrice = price - discount;
+    console.log("Sir , your final price is: ", finalPrice);
 } else{
-    console.log("Your name is not the same as your friend's name.");
+    console.log("You will have to pay the price written on the product.");
 }
