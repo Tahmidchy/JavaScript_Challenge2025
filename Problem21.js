@@ -1,11 +1,17 @@
 /*
-TODO: Problem-21: If the value of variable X is 15 and the value of variable Y is "20", what will be the output if variable X != variable Y and variable X !== variable Y?
+TODO: Problem-21: You have a gaming app. If the player level is less than 10, you will say "Novice", if it is between 10 and 50, you will say "Expert", and if it is more than 50, you will say "Pro Gamer".
 */
-//Solution: 
 
-let varibaleX = 15;
-let varibaleY = "20";
-console.log(varibaleX != varibaleY); // TRUE
-console.log(varibaleX !== varibaleY); // TRUE 
+// Solution: 
 
-//Explain: The != operator checks for inequality between two values. It returns true if the values are not equal. The !== operator checks for inequality between two values and also checks if the values are of different data types . It returns true if the values are not equal and are of different data types. In this case , the value of variable X is a number and the value of variable Y is a string. Therefore , the output will be true for both != and !== operators.
+const player_level = 30;
+
+if( player_level < 10 ){
+    console.log("Novice");
+} else if(player_level >= 10 && player_level <= 50 ){
+    console.log("Expert Gamer");
+} else if(player_level > 50){
+    console.log("Pro Gamer");
+} else{
+    console.log("You are not a player");
+}
