@@ -1,12 +1,9 @@
 /*
-TODO: Problem-3: If you run 5 kilometers, I will give you chocolate. If you don't run, you will get fat. Write a program for this condition.
+TODO: Problem-3:  Suppose you go to the market one day and your bag contains potatoes, onions, brinjals, radishes, carrots, tomatoes, okra, gourds, cucumbers and plantains. Now write a program that will tell you how many vegetables are in your bag.
 */
 
-// Solution: 
+//Solution: 
 
-const runingOutside = true;
-if(runingOutside == true){
-    console.log("You will get chocolate");
-} else{
-    console.log("You will get fat");
-}
+const vegetables = ["potatoes", "onions", "brinjals", "radishes", "carrots", "tomatoes", "okra", "gourds", "cucumbers", "plantains"];
+const count = vegetables.length;  
+console.log(`There are ${count} vegetables in your bag.`);

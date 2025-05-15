@@ -1,15 +1,9 @@
 /*
-TODO: Problem-10: Write a program to see if a job candidate can take the exam. The conditions for the exam are - the job candidate must be under 30 years of age and have at least 2 years of experience.
+TODO: Problem-10: You have created an array where you store values ​​from 1 to 10. Now change the value of position number 7 and update it to 30.
 */
 
 // Solution: 
 
-const candidate_age = 25;
-const candidate_experience = 3;
-const min_age = 30;
-const min_experience = 2;
-if( candidate_age < min_age && candidate_experience >= min_experience ){
-    console.log("Candidate is eligible for the exam.");
-} else{
-    console.log("Candidate is not eligible for the exam.");
-}
+const ArrayList = [1,2,3,4,5,6,7,8,9,10];
+ArrayList[7] = 30;
+console.log(ArrayList);

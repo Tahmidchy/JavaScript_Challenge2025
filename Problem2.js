@@ -1,12 +1,8 @@
 /*
-TODO: Problem-2: A mobile application will display "Welcome!" as the output if it is successful in logging in and "Get Lost" if it fails. Write a program for this condition.
+TODO: Problem-2: You have a small fridge at home that can hold exactly 5 fruits. You make an array and put apples, oranges, bananas, mangoes, and guavas in it.
 */
 
 //Solution: 
 
-const loginStatus = true;
-if(loginStatus == true){
-    console.log("Welcome!");
-} else {
-    console.log("Get Lost");
-}
+const fridge = ['apple', 'orange', 'banana', 'mango', 'guava'];
+console.log(`Fruits in the fridge: ${fridge.join(', ')}`);

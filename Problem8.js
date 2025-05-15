@@ -1,13 +1,9 @@
 /*
-TODO:Problem-8: Write a program that checks whether a student is eligible to get admitted to a university. The condition is that the math score must be more than 80 or the English score must be more than 85. If neither of these is true, it will say that I will marry you.
+TODO: Problem-8: If you put all your friends' names in an array, now you find out which friend's name is at index number 3 in that array?
 */
 
-//Solution: 
+// Solution: 
 
-const mathScore = 90;
-const englishScore = 80;
-if(mathScore > 80 || englishScore > 85 == true){
-    console.log("You are eligible to get admitted to the university.");
-} else{
-    console.log("I will marry you.");
-}
+const friends = ["Alice", "Bob", "Charlie", "David", "Eve"]; // Example array
+const friendAtIndex3 = friends[3]; // Accessing the friend at index 3
+console.log(friendAtIndex3 , friends);

@@ -1,13 +1,11 @@
 /*
-TODO: Problem-5: If the movie show is before 9 pm, then you will go to watch the movie. And if it is later, then you will go to sleep. Write a program about this.
+TODO: Problem-5: Create an array that contains the odd numbers between 11 and 30.
 */
 
 // Solution: 
 
-const showMovieTime = 9;
-
-if( showMovieTime == 9){
-    console.log("I will go to watch the movie");
-} else{
-    console.log("I will go to sleep");
+const oddNumbers = [];
+for (let i = 11; i <= 30; i++) {
+    if (i % 2 !== 0) oddNumbers.push(i);
 }
+console.log(oddNumbers);

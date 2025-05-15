@@ -1,11 +1,8 @@
 /*
-TODO: Problem-7: Write a program that checks if you are over 18 years old and over 60 inches tall, then push the car, and if not, sit in the car.
+TODO: Problem-7: Put the names of the capitals of a few countries in an array and log its length to the console.
 */
 
-const my_age = 25;
-const my_height = 72;
-if(my_age > 18 && my_height > 60) {
-    console.log("You can push the car");
-} else{
-    console.log("You can sit in the car");
-}
+// Solution
+
+const capitals = ["Tokyo", "Paris", "Canberra", "Ottawa", "Berlin","Dhaka"];
+console.log(capitals.length);

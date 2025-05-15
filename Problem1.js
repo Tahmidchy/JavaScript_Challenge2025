@@ -1,12 +1,21 @@
 /*
-TODO: Problem-1: Your mother has given you a condition that if you come home before 6 pm, she will feed you an evening snack, and if you are late, she will punish you. Solve the code with this condition.
+TODO: Problem-1: You create an array that contains the numbers 71 to 79.
 */
+
 // Solution: 
 
-let time = 6;
+const numbersArray = Array.from({length: 9}, (_, i) => 71 + i);
+console.log(numbersArray);
 
-if (time <= 6) {
-    console.log("You will get an evening snack");
-} else {
-    console.log("You will be punished");
-}
+/*
+Explanation:
+Array.from() creates a new array from the provided object or iterable.
+
+{ length: 9 } specifies the length of the array (9 elements for numbers 71 to 79 inclusive).
+
+The second argument (_, i) => i + 71 is a mapping function:
+
+i is the index (starting from 0).
+
+Adding 71 to the index gives the desired numbers starting at 71.
+*/
