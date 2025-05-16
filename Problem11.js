@@ -1,16 +1,9 @@
 /*
-TODO: Problem-11: If you have more than 12 eggs in your fridge or don't have a chicken, then you should cook egg korma or eat bread and bananas.
+TODO: Problem-11: You have some games in your mobile, you have put them in the array. The games are - "Free Fire", "PUBGI", "Candy Crash", "Temple Run". Now you want to change the index of this game to number 2 and put "Subway Surfer" in that place, write a program and set it.
 */
 
-//Solution: 
+// Solution: 
 
-const eggs = 9;
-const hasChicken = false;
-
-if(eggs > 12 ||  hasChicken) {
-    console.log("Cook egg korma");
-} else if( eggs <= 12 && hasChicken) {
-    console.log("Cook chicken Korma");
-}else{
-    console.log("Eat bread and bananas");
-}
+const gameList = ["Free Fire","PUBGI","Candy Crush","Temple Run"];
+gameList[2] = "Subway Surfer";
+console.log("My Update Game List Is : ",gameList);

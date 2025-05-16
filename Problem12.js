@@ -1,14 +1,8 @@
 /*
-TODO: Program-12: If a person has a body temperature of over 100 degrees or has a cough, they will go to the doctor. Otherwise, they will lie down with their back twisted. Write a program for this.
+TODO: Problem-12: Create an array with the names of one and a half members of your family, then the output will show the name of the member in the third number position.
 */
 
-//Solution: 
+// Solution: 
 
-let bodyTemperature = 100;
-let hasCough = true;
-
-if(bodyTemperature > 100 || hasCough) {
-    console.log("Go to the doctor");
-} else{
-    console.log("Lie down with your back twisted");
-}
+const familyList =["Alam","Jerin","Tahmid","Mr.Pusy"];
+console.log("Our third family Member is :" ,familyList[3]);
