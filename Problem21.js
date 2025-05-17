@@ -1,17 +1,9 @@
 /*
-TODO: Problem-21: You have a gaming app. If the player level is less than 10, you will say "Novice", if it is between 10 and 50, you will say "Expert", and if it is more than 50, you will say "Pro Gamer".
+TODO: Problem-21: You have created an array which contains the names - "Babul", "Alif", "Chhotan". Now write a program to find out how many numbers Babul has in his index.
 */
+// Solution:
 
-// Solution: 
-
-const player_level = 30;
-
-if( player_level < 10 ){
-    console.log("Novice");
-} else if(player_level >= 10 && player_level <= 50 ){
-    console.log("Expert Gamer");
-} else if(player_level > 50){
-    console.log("Pro Gamer");
-} else{
-    console.log("You are not a player");
-}
+let names = ["Babul", "Alif", "Chhotan"];
+let index = names.indexOf("Babul"); // Find the index of "Babul" in the array
+console.log(`Babul is at index: ${index}`); // Log the index of "Babul" to the console
+// Output: Babul is at index: 0
