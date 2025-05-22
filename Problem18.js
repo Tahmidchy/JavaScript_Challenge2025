@@ -1,16 +1,9 @@
 /*
-TODO: Problem-18: In an exam, if a student's mark is less than 50, you will say that he/she has failed, and if the student's mark is between 50 and 80, you will say that he/she has passed. And if the mark is above 80, you will say that you have got an A+.
+TODO: Problem-18: An array contains [24,36,48,60], now add 12 as the first element to this array and display the array as output in a new way.
 */
 
-//Solution: 
+// Solution: 
 
-const student_Mark = 70;
-if (student_Mark < 50) {
-    console.log("Sorry , you have failed try again");
-} else if(student_Mark >= 50 && student_Mark <= 80) {
-    console.log("Congratulations !!You have passed");
-} else if(student_Mark >= 80) {
-    console.log("Congratulations !!You have got an A+");
-} else{
-    console.log("Invalid mark");
-}
+let myArray = [24,36,48,60];
+myArray.unshift(12);
+console.log(`Update Array is : ${myArray}`);
