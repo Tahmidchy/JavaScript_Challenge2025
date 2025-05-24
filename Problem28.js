@@ -1,8 +1,11 @@
 /*
-TODO: Problem-28: If you are over 15, you will appear as a teenager, and if you are under 15, you will appear as a child. Code this in one line using the ternary operator.
+TODO: Problem-28: Print from 1 to 25, but exclude numbers divisible by 3.
 */
 
-// Solution: 
-
-const age = 10;
-const you_are = age >= 15 ? console.log("You are a Teenager") : console.log(" You are a Child");
+// Solution:
+for (let i = 1; i <= 25; i++){
+    if (i % 3 === 0) { // Check if the number is divisible by 3
+        continue; // Skip the number if it is divisible by 3
+    }
+    console.log(i); // Print the number
+}
