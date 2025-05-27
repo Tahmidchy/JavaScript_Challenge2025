@@ -1,21 +1,11 @@
 /*
-TODO: Problem-1: You create an array that contains the numbers 71 to 79.
+TODO: Problem-1: You write a program that contains 5 subjects of your choice and uses a loop to log each subject separately to the console.
 */
 
 // Solution: 
 
-const numbersArray = Array.from({length: 9}, (_, i) => 71 + i);
-console.log(numbersArray);
-
-/*
-Explanation:
-Array.from() creates a new array from the provided object or iterable.
-
-{ length: 9 } specifies the length of the array (9 elements for numbers 71 to 79 inclusive).
-
-The second argument (_, i) => i + 71 is a mapping function:
-
-i is the index (starting from 0).
-
-Adding 71 to the index gives the desired numbers starting at 71.
-*/
+let subjects = ["Math", "Science", "History", "English", "Art"];
+for(let i = 0; i < subjects.length; i++) {
+    console.log(subjects[i]);
+}
+// Output:

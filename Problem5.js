@@ -1,11 +1,10 @@
 /*
-TODO: Problem-5: Create an array that contains the odd numbers between 11 and 30.
+TODO: Problem-5: Put your exam dates in an array and loop through those dates in the console.
 */
 
 // Solution: 
 
-const oddNumbers = [];
-for (let i = 11; i <= 30; i++) {
-    if (i % 2 !== 0) oddNumbers.push(i);
+let examDates = ["2023-06-15", "2023-07-20", "2023-08-25", "2023-09-30", "2023-10-10"];
+for(let i = 0; i < examDates.length; i++) {
+    console.log(examDates[i]);
 }
-console.log(oddNumbers);

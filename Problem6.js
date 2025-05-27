@@ -1,8 +1,12 @@
 /*
-TODO: Problem-6: Create an array with all the colors around you. Then log the length of that array to the console.
+TODO: Problem-6: Log the console 10 times using a while loop - "I will practice programming for at least 3 hours every day."
 */
 
 // Solution: 
 
-const colors = ['red', 'green', 'blue', 'yellow', 'orange'];
-console.log(colors.length);
+let i = 0; // Initialize a counter variable
+while (i <= 10){
+    console.log("I will practice programming for at least 3 hours every day."); // Log the message to the console
+    i++; // Increment the counter variable by 1
+    // The loop will continue until the counter variable is less than or equal to 10
+}

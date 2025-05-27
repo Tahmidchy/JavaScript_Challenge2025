@@ -1,8 +1,10 @@
 /*
-TODO: Problem-2: You have a small fridge at home that can hold exactly 5 fruits. You make an array and put apples, oranges, bananas, mangoes, and guavas in it.
+TODO: Problem-2:Keep the names of your favorite foods in one place. Print all the items separately using a loop program.
 */
 
-//Solution: 
+// Solution: 
 
-const fridge = ['apple', 'orange', 'banana', 'mango', 'guava'];
-console.log(`Fruits in the fridge: ${fridge.join(', ')}`);
+let favoriteFoods = ["Pizza", "Burger", "Pasta", "Sushi", "Ice Cream"];
+for(let i = 0; i < favoriteFoods.length; i++) {
+    console.log(favoriteFoods[i]);
+}

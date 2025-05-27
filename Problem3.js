@@ -1,9 +1,10 @@
 /*
-TODO: Problem-3:  Suppose you go to the market one day and your bag contains potatoes, onions, brinjals, radishes, carrots, tomatoes, okra, gourds, cucumbers and plantains. Now write a program that will tell you how many vegetables are in your bag.
+TODO: Problem-3: Write the birth years of your family members in an array and use a loop to output the birth years.
 */
 
-//Solution: 
+// Solution: 
 
-const vegetables = ["potatoes", "onions", "brinjals", "radishes", "carrots", "tomatoes", "okra", "gourds", "cucumbers", "plantains"];
-const count = vegetables.length;  
-console.log(`There are ${count} vegetables in your bag.`);
+let birthYears = [1990, 1985, 2000, 1995, 1988];
+for(let i = 0; i < birthYears.length; i++) {
+    console.log(birthYears[i]);
+}

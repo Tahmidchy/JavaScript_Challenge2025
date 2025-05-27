@@ -1,8 +1,13 @@
 /*
-TODO: Problem-7: Put the names of the capitals of a few countries in an array and log its length to the console.
+TODO: Problem-7: You use a while loop to log the numbers from 1 to 20 to the console.
 */
 
-// Solution
+// Solution: 
 
-const capitals = ["Tokyo", "Paris", "Canberra", "Ottawa", "Berlin","Dhaka"];
-console.log(capitals.length);
+let i = 1; // Initialize a counter variable starting from 1
+while(i <= 20){
+    console.log(i); // Log the current value of the counter variable to the console
+    i++; // Increment the counter variable by 1
+    // The loop will continue until the counter variable is less than or equal to 20
+    // This will log the numbers from 1 to 20 to the console
+}
