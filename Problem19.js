@@ -1,9 +1,11 @@
 /*
-TODO: Problem-19: You create an array with the names of 5 books. Now you have finished the first book. So, remove the first book from the array and log the new array to the console.
+TODO: Problem-19: Your task will be to display as output all the numbers from 20 to 50 that are divisible by 7.
 */
-// Solution:
 
-let books = ["Book1", "Book2", "Book3", "Book4", "Book5"];
-books.shift(); // Remove the first book from the array
-console.log(`Updated array after removing the first book: ${books}`); // Log the new array to the console
-// Output: Updated array after removing the first book: Book2,Book3,Book4,Book5
+// Solution: 
+
+for (let i = 20; i <= 50; i++){
+    if (i % 7 === 0) { // Check if the number is divisible by 7
+        console.log(`The number ${i} is divisible by 7`);
+    }
+}

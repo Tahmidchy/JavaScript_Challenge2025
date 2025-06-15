@@ -1,12 +1,16 @@
 /*
-TODO: Problem-20: You want to write a program that checks if a fruit called "mango" exists in a list. If it does, the output will say "Mango exists," and if it does not, it will say "I need mangoes, I have to climb the tree to get them." The array of fruits contains "apples", "bananas", "mangoes", and "lychees".
+TODO: Problem-20: Show as output all the numbers from 40 to 80 that are divisible by 5 and 7.
 */
 
 // Solution:
 
-let fruits = ["apples", "bananas", "mangoes", "lychees"];
-if(fruits.includes("mangoes")) {
-    console.log("Mango exists"); // Output if mango exists in the array
-} else {
-    console.log("I need mangoes, I have to climb the tree to get them."); // Output if mango does not exist in the array
+for (let i = 40; i <= 80; i++){
+    if (i % 5 === 0 && i % 7 === 0) { // Check if the number is divisible by both 5 and 7
+        console.log(`The number ${i} is divisible by both 5 and 7`);
+    }
+    // Output:
+    // The number 70 is divisible by both 5 and 7
+    // Explanation:
+    // The only number between 40 and 80 that is divisible by both 5 and 7 is 70.
+    // The code checks each number in the range and prints it if it meets the condition.
 }
