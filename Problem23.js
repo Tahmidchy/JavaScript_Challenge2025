@@ -1,10 +1,21 @@
 /*
-TODO: Problem -23: You have written the names of some cities - "Dhaka", "Chittagong", "Sylhet". Now you thought that you would add the name of another city, "Rajshahi", but you accidentally added it with lowercase letters. Now write a program to check whether "Rajshahi" is in uppercase letters or not.
+TODO: Problem-23: Print all the numbers from 0 to 100 that are divisible by 9 and 6.
 */
 
 // Solution:
 
-let cities = ["Dhaka", "Chittagong", "Sylhet"]; // Array of cities
-cities.push("rajshahi"); // Add "rajshahi" to the array
-let checkCity = cities.includes("Rajshahi"); // Check if "Rajshahi" is in the array
-console.log(`Is "Rajshahi" in uppercase letters? ${checkCity}`); // Log the result to the console
+for (let i = 0; i <= 100; i++){
+    if (i % 9 === 0 && i % 6 === 0) { // Check if the number is divisible by both 9 and 6
+        console.log(`The number ${i} is divisible by both 9 and 6`);
+    }
+    // Output:
+    // The number 0 is divisible by both 9 and 6
+    // The number 18 is divisible by both 9 and 6
+    // The number 36 is divisible by both 9 and 6
+    // The number 54 is divisible by both 9 and 6
+    // The number 72 is divisible by both 9 and 6
+    // The number 90 is divisible by both 9 and 6
+    // The number 108 is divisible by both 9 and 6
+    // Explanation:
+    // The code checks each number in the range from 0 to 100 and prints it if it meets the condition of being divisible by both 9 and 6.
+}

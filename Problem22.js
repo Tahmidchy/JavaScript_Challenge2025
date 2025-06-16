@@ -1,10 +1,8 @@
 /*
-TODO: Problem -22: Suppose you have created a list of friends - "Rimon" "Rifat", "Rajiv". Now you think you have forgotten Rifat's location. Now write a program that will find Rifat's location for you.
+TODO: Problem-22: The for loop will run a loop from 1 to 50. However, the loop will increment the loop variable man each time it runs.
 */
-
 // Solution:
 
-let friends = ["Rimon", "Rifat", "Rajiv"]; // Array of friends
-let index = friends.indexOf("Rifat"); // Find the index of "Rifat" in the array
-console.log(`Rifat is at index: ${index}`); // Log the index of "Rifat" to the console
-// Output: Rifat is at index: 1
+for (let i = 1; i <= 50; i = i + 4){
+    console.log(`The number is: ${i}`); // Print the current value of i
+}

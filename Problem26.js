@@ -1,31 +1,12 @@
 /*
-TODO: Problem-26: Suppose you are going to have a party, now you will first check whether more than 100 guests will come to the party? If they will, then check whether everyone will bring gifts. If they bring gifts, say let's party all night, and if not, say I will party with you.
+TODO: Problem-26: You want to print the numbers from 1 to 40, but you want to print them in such a way that the numbers divisible by 7 are skipped. For example, (7,14,21,) etc. will be skipped. Write a program where the numbers will be skipped.
 */
 
-// Solution: 
+// Solution:
 
-function checkPartyGuests(guests) {
-    if (guests > 100) {
-        const bringsGifts = confirm("Will everyone bring gifts?");
-        if (bringsGifts) {
-            console.log("Let's party all night!");
-            } else {
-            console.log("I will party with you.");
-        }
+for (let i = 1; i <= 40; i++){
+    if (i % 7 === 0) { // Check if the number is divisible by 7
+        continue; // Skip the number if it is divisible by 7
     }
-} 
-
-// Solution: Number-2 
-
-const guest_number_up100 = true;
-const guest_bring_gift = true;
-
-if( guest_number_up100 == true){
-    if( guest_bring_gift == true){
-        console.log("Let's party all night!");
-    } else {
-        console.log("I will party with you.");
-    }
-} else{
-    console.log("Let's have a small gathering.");
+    console.log(i); // Print the number
 }
