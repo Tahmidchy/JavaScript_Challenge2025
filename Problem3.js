@@ -1,10 +1,19 @@
 /*
-TODO: Problem-3: Write the birth years of your family members in an array and use a loop to output the birth years.
+TODO: Problem-3: You create an object called Cat and put information about the cat in that object.
 */
 
 // Solution: 
-
-let birthYears = [1990, 1985, 2000, 1995, 1988];
-for(let i = 0; i < birthYears.length; i++) {
-    console.log(birthYears[i]);
-}
+const cat = {
+    name: 'Whiskers',
+    breed: 'Siamese',
+    age: 3,
+    color: 'Cream',
+    weight: '10 lbs',
+    isIndoor: true,
+    favoriteFood: ['Tuna', 'Chicken'],
+    ownerName: 'Alice',
+    playTime: function() {
+        console.log(`${this.name} loves to play with yarn!`);
+    }
+};
+console.log(cat);

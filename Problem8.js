@@ -1,14 +1,17 @@
 /*
-TODO: Problem 8: Log the numbers from 50 to 100 to the console using a while loop.
+TODO: Problem-8: You will create an object called Player. It will have properties like name, age, sport, team, etc. Then you will need to console the name of his team using dot notation from the object.
 */
 
 // Solution: 
 
-let i = 50; // Initialize a counter variable starting from 50
-while(i <= 100){
-    console.log(i); // Log the current value of the counter variable to the console
-    i++; // Increment the counter variable by 1
-    // The loop will continue until the counter variable is less than or equal to 100
-    // This will log the numbers from 50 to 100 to the console
-    // The output will be: 50, 51, 52, ..., 100
-}
+const player = {
+    name: "John Doe",
+    age: 25,
+    sport: "Football",
+    team: "FC Awesome",
+    position: "Goalkeeper",
+    height: 1.85,
+    weight: 80,
+};
+console.log(player.team); // Output: FC Awesome
+console.log(player.name); // Output: John Doe

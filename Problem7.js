@@ -1,13 +1,25 @@
 /*
-TODO: Problem-7: You use a while loop to log the numbers from 1 to 20 to the console.
+TODO: Problem-7:Create a laptop object that contains the brand name, processor, RAM, price, and display size.
 */
 
-// Solution: 
+// Solution:
 
-let i = 1; // Initialize a counter variable starting from 1
-while(i <= 20){
-    console.log(i); // Log the current value of the counter variable to the console
-    i++; // Increment the counter variable by 1
-    // The loop will continue until the counter variable is less than or equal to 20
-    // This will log the numbers from 1 to 20 to the console
-}
+const laptop = {
+    brand: 'Hp',
+    processor: 'Intel Core i7',
+    RAM: '16GB',
+    price: 1200,
+    displaySize: '13.6 inches',
+    storageType: 'SSD',
+    batteryLife: '10 hours',
+    graphicsCard: 'NVIDIA GeForce GTX 1650',
+    weight: '4.5 lbs',
+    operatingSystem: 'Windows 10',
+    color: 'Silver'
+};
+console.log(laptop);
+console.log(laptop.brand); // Output: Hp
+console.log(laptop.processor); // Output: Intel Core i7
+console.log(laptop.RAM); // Output: 16GB
+console.log(laptop.price); // Output: 1200
+console.log(laptop.displaySize); // Output: 13.6 inches

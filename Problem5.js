@@ -1,10 +1,31 @@
 /*
-TODO: Problem-5: Put your exam dates in an array and loop through those dates in the console.
+TODO: Problem-5: You create an object with a bike (motorcycle) that contains the bike's brand name, number of tires, color, maximum speed, and price.
 */
 
-// Solution: 
+// Solution:
 
-let examDates = ["2023-06-15", "2023-07-20", "2023-08-25", "2023-09-30", "2023-10-10"];
-for(let i = 0; i < examDates.length; i++) {
-    console.log(examDates[i]);
-}
+const motorcycle = {
+    brand: 'Honda',
+    numTires: 2,
+    color: 'Red',
+    maxSpeed: 250,
+    price: 15000,
+    isElectric: false,
+    engineType: 'V-twin',
+    fuelCapacity: '4.5 gallons',
+    weight: '500 lbs',
+    year: 2022,
+    model: 'CBR1000RR-R Fireblade SP'
+};
+console.log(motorcycle);
+console.log(motorcycle.brand); // Output: Honda
+console.log(motorcycle.numTires); // Output: 2
+console.log(motorcycle.color); // Output: Red
+console.log(motorcycle.maxSpeed); // Output: 250
+console.log(motorcycle.price); // Output: 15000
+console.log(motorcycle.isElectric); // Output: false
+console.log(motorcycle.engineType); // Output: V-twin
+console.log(motorcycle.fuelCapacity); // Output: 4.5 gallons
+console.log(motorcycle.weight); // Output: 500 lbs
+console.log(motorcycle.year); // Output: 2022
+console.log(motorcycle.model); // Output: CBR1000RR-R Fireblade SP

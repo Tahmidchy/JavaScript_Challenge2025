@@ -1,12 +1,27 @@
 /*
-TODO: Problem-6: Log the console 10 times using a while loop - "I will practice programming for at least 3 hours every day."
+TODO: Problem-6:Create a bird object and put properties such as the bird's name, color, food, etc.
 */
 
-// Solution: 
+// Solution:
 
-let i = 0; // Initialize a counter variable
-while (i <= 10){
-    console.log("I will practice programming for at least 3 hours every day."); // Log the message to the console
-    i++; // Increment the counter variable by 1
-    // The loop will continue until the counter variable is less than or equal to 10
-}
+const bird = {
+    name: 'Sparrow',
+    color: 'Brown',
+    food: 'Seeds',
+    habitat: 'Urban areas',
+    wingspan: '20 cm',
+    canFly: true,
+    migrationPattern: 'Seasonal',
+    averageLifespan: '3 years',
+    nestingBehavior: 'Builds nests in trees or shrubs',
+    vocalization: 'Chirping',
+    conservationStatus: 'Least Concern',
+    scientificName: 'Passer domesticus',
+    family: 'Passeridae',
+    size: 'Small',
+    weight: '24 grams',
+    dietType: 'Omnivore',
+    breedingSeason: 'Spring and Summer'
+};
+console.log(bird);
+console.log(bird.name); // Output: Sparrow
