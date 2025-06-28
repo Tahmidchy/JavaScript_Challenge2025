@@ -1,11 +1,19 @@
 /*
-TODO: Problem 16: Print from 150 to 170 using a for loop.
+TODO: Problem-16: Create an object called Book that contains the name of the book, the name of the book, and the price of the book. Then log all the properties (keys) and all the values ​​of the object to the console.
 */
 
-// Solution:
-for (let i = 150; i <= 170; i++){
-    console.log(`The number is: ${i}`);
-}
+// Solution: 
 
-// Output:
-// The number is: 150 
+const Book = {
+    name: "The Great Gatsby",
+    author: "F. Scott Fitzgerald",
+    price: "$10.99"
+};
+const keys = Object.keys(Book);
+for (const key of keys) {
+    console.log(key); // Logs the keys of the object
+}
+const values = Object.values(Book);
+for (const value of values) {
+    console.log(value); // Logs the values of the object
+};

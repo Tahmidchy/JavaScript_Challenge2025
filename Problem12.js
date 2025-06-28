@@ -1,15 +1,23 @@
 /*
-TODO: Problem-12: Find the sum of the numbers from 5 to 15 using a while loop.
+TODO: Problem-12: Create a library object and add these properties to that object: Name: Public Library, Location: Dhaka, and Books: 5000. Log the location to the console using dot notation.
 */
 
 // Solution:
 
-let num = 5; // Initialize a counter variable starting from 5
-let sum = 0; // Initialize a variable to hold the sum of the numbers
-while(num <= 15){
-    sum += num; // Add the current value of the counter variable to the sum
-    num++; // Increment the counter variable by 1
-    // The loop will continue until the counter variable is less than or equal to 15
-    // This will calculate the sum of the numbers from 5 to 15
-}
-console.log(sum); // Log the final sum to the console
+const library = {
+    name: 'Public Library',
+    location: 'Dhaka',
+    books: 5000,
+    established: 1990,
+    address: {
+        street: '123 Main St',
+        city: 'Dhaka',
+        zipCode: '1212'
+    },
+    services: ['Reading Room', 'Internet Access', 'Book Lending'],
+};
+console.log(library.location); // Output: Dhaka
+// console.log(library.name); // Output: Public Library
+// console.log(library.books); // Output: 5000
+// console.log(library.established); // Output: 1990
+// console.log(library.address); // Output: { street: '123 Main St', city: 'Dhaka', zipCode: '1212' }

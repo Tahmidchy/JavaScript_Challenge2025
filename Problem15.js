@@ -1,16 +1,22 @@
 /*
-TODO: Problem - 15: Add the numbers from 20 to 40 and log only the final sum to the console using a While loop.
+TODO: Problem-14: Create a family object in which one property will be Father and its value will be another object and Father will have Father's name, age and profession, similarly there will be a property called Mother and that property and an object inside it will have Mother's name, age and profession, now your job is to find Mother's age property along with your Father's age property. Then find the sum of those two ages and show it as output.
 */
 
 // Solution:
 
-let num = 20; // Initialize a counter variable starting from 20
-let sum = 0; // Initialize a variable to hold the sum of the numbers
-while(num <= 40){
-    sum += num; // Add the current value of the counter variable to the sum
-    num++; // Increment the counter variable by 1
-    // The loop will continue until the counter variable is less than or equal to 40
-    // This will calculate the sum of the numbers from 20 to 40
-}
-console.log(`The sum of numbers from 20 to 40 is: ${sum}`); // Log the final sum to the console
-// The output will be the sum of all numbers from 20 to 40
+const family = {
+    Father: {
+        name: 'John',
+        age: 45,
+        profession: 'Engineer',
+    },
+    Mother: {
+        name: 'Emma',
+        age: 42,
+        profession: 'Teacher',
+    },
+};
+const fatherAge = family.Father.age;
+const motherAge = family.Mother.age;
+const sumOfAges = fatherAge + motherAge;
+console.log(`Father and Mother age sum is : ${sumOfAges}`);

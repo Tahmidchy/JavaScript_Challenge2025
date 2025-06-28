@@ -1,28 +1,24 @@
 /*
-TODO: Problem-10: While printing the numbers from 111 to 110 using the while loop, the numbers will be divided by 2.
+TODO: Problem-10: You have a favorite place. You create an object called favplace and store some information in it, such as name: "Cox's Bazar", distance: "400 km", and popularity: "High". Now log the popularity property console using bracket notation.
 */
+
 // Solution:
 
-let num = 111;
-while (num >= 110) {
-    console.log(num / 2);
-    num--;
+const favplace = {
+    name: "Cox's Bazar",
+    distance: "400 km",
+    popularity: "High",
+    bestTimeToVisit: "November to February",
+    activities: ["Beach", "Water Sports", "Sightseeing"],
+    accommodation: ["Hotels", "Resorts", "Guesthouses"],
+    cuisine: ["Seafood", "Bengali Cuisine", "Street Food"],
 };
-
-
-// Output:
-// 55.5
-// 54.5
-// 53.5
-// 52.5
-// 51.5 
-
-// Expalnation:
-// 1. We start with the variable `num` initialized to 111.
-// 2. The while loop checks if `num` is greater than or equal to 110.
-// 3. Inside the loop, we print the value of `num` divided by 2.
-// 4. After printing, we decrement `num` by 1.
-// 5. The loop continues until `num` is less than 110.
-// 6. The output will be the numbers from 111 to 110 divided by 2, printed in descending order.
-// 7. The loop will run 5 times, printing the numbers 55, 54
-// 8. 53, 52, and 51.
+console.log(favplace["popularity"]); // Output: High
+// or
+// console.log(favplace["name"]); // Output: Cox's Bazar
+// console.log(favplace["distance"]); // Output: 400 km
+// console.log(favplace["bestTimeToVisit"]); // Output: November to February
+// console.log(favplace["activities"]); // Output: [ 'Beach', 'Water Sports', 'Sightseeing' ]
+// console.log(favplace["accommodation"]); // Output: [ 'Hotels', 'Resorts', 'Guesthouses' ]
+// console.log(favplace["cuisine"]); // Output: [ 'Seafood', 'Bengali Cuisine', 'Street Food' ]
+// console.log(favplace["popularity"]); // Output: High

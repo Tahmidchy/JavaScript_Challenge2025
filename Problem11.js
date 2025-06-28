@@ -1,14 +1,21 @@
 /*
-TODO: Problem-11: Log console from 50 to 100 using a while loop.
+TODO: Problem-11: You create a new object called Phone. That object will have Brand, Color, and Price as properties. You will log the price to the console using bracket notation.
 */
 
 // Solution:
 
-let i = 50; // Initialize a counter variable starting from 50
-while(i <= 100){
-    console.log(i); // Log the current value of the counter variable to the console
-    i++; // Increment the counter variable by 1
-    // The loop will continue until the counter variable is less than or equal to 100
-    // This will log the numbers from 50 to 100 to the console
+const phone = {
+    Brand: "Apple",
+    Color: "Black",
+    Price: "$999.99",
+    Storage: "256GB",
+    RAM: "8GB",
+    Model: "iPhone 14 Pro",
+    Battery: "3095 mAh",
+    Camera: "48MP",
+    OperatingSystem: "iOS 16",
+    Year: 2023,
 }
-// The output will be: 50, 51, 52, ..., 100
+console.log(phone["Price"]); // Output: $999.99
+// console.log(phone["Brand"]); // Output: Apple
+// console.log(phone["Color"]); // Output: Black
