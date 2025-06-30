@@ -1,19 +1,18 @@
 /*
-TODO: Problem-21: Now find the sum of all the numbers from 1 to 40 that are divisible by 13.
+TODO: Problem-21: const books = {book1: "Harry potter", book2: "Lord of the rings", book3: "The Hobbit"}; Then run the above loop and log all the book names to the console.
 */
 
 // Solution:
 
-let sum = 0; // Initialize the sum variable to 0
-for (let i = 1; i <= 40; i++){
-    if (i % 13 === 0) { // Check if the number is divisible by 13
-        sum += i; // Add the current number to the sum
-    }
+const books = {
+    book1: "Harry potter",
+    book2: "Lord of the rings",
+    book3: "The Hobbit"
+};
+const bookNames = Object.keys(books);
+for (const bookName of bookNames) {
+    console.log(books[bookName]); // Logs the names of the books
+    // Example output: Harry potter, Lord of the rings, The Hobbit
+    // Note: The output will be in the order of the properties defined in the object.
 }
-console.log(`The sum of numbers from 1 to 40 that are divisible by 13 is: ${sum}`);
-// Output:  
-// The sum of numbers from 1 to 40 that are divisible by 13 is: 26
-// Explanation:
-// The sum of numbers from 1 to 40 that are divisible by 13 is calculated by adding all the numbers in that range that meet the condition.
-// In this case, the numbers are 13 and 26, which sum to 39.
-// The code checks each number in the range and adds it to the sum if it is divisible by 13.
+// The above code uses Object.keys() to get an array of the keys of the books object, and then iterates over that array to log each book name to the console.

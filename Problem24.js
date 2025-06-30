@@ -1,16 +1,28 @@
 /*
-TODO: Problem-24: Print the numbers from 1 to 50 that are divisible by both 3 and 4 and find the sum of the numbers.
+TODO: Problem-24: Create a building object with Floor: 10, Address: {Street Main Road, City Dhaka}, and Type: Commercial. Now run a for in loop and print all the properties and values.
 */
 
 // Solution:
-let sum = 0; // Initialize a variable to hold the sum of the numbers
-for (let i = 1; i <= 50; i++){// Loop through numbers from 1 to 50
-    if (i % 3 === 0 && i % 4 === 0) { // Check if the number is divisible by both 3 and 4
-        console.log(`The number ${i} is divisible by both 3 and 4`); // Print the number
-        sum += i; // Add the number to the sum
-    }
-}
-console.log(`The sum of the numbers divisible by both 3 and 4 is: ${sum}`); // Print the sum
-// Output:  
-// The number 12 is divisible by both 3 and 4
-// The number 24 is divisible by both 3 and 4   
+
+const building = {
+    Floor: 10,
+    Address: {
+        Street: "Main Road",
+        City: "Dhaka"
+    },
+    Type: "Commercial"
+};
+for (const key in building) {
+    const value = building[key];
+    console.log(key,value);
+};
+// The for...in loop iterates over the enumerable properties of an object, allowing you to access both the property names (keys) and their corresponding values. In this case, it will print all the properties and values of the building object.
+// The output will be:
+// Floor 10
+// Address { Street: 'Main Road', City: 'Dhaka' }
+// Type Commercial
+// Note: The Address property is an object itself, so if you want to print its properties as well, you can use another for...in loop inside the first one.
+// For example:
+// for (const key in building.Address) {
+//     const value = building.Address[key];
+//     console.log(key, value);

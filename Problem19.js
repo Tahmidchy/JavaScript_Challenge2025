@@ -1,11 +1,11 @@
 /*
-TODO: Problem-19: Your task will be to display as output all the numbers from 20 to 50 that are divisible by 7.
+TODO: Problem-19: There is an object called Phone, const Phone = { Brand: "Samsung", Model: "Galaxy S21", Price: 85000 }; For this, run a for of loop using the object key and log each property and its value to the console.
 */
 
-// Solution: 
-
-for (let i = 20; i <= 50; i++){
-    if (i % 7 === 0) { // Check if the number is divisible by 7
-        console.log(`The number ${i} is divisible by 7`);
-    }
+// Solution:
+const phone = { Brand: "Samsung", Model: "Galaxy S21", Price: 85000 };
+const keys = Object.keys(phone);
+for (const key of keys) {
+    console.log(`${key}: ${phone[key]}`); // Logs the key and value of the object
+    // Example output: Brand: Samsung, Model: Galaxy S21, Price: 85000  
 }

@@ -1,16 +1,18 @@
 /*
-TODO: Problem-20: Show as output all the numbers from 40 to 80 that are divisible by 5 and 7.
+TODO: Problem-20:You have created an object named Bike with properties Brand: "Hero", Price: 120000, and Model: "Splendor". Use the object's values() method to retrieve all the values.
 */
 
-// Solution:
+// Solution: 
 
-for (let i = 40; i <= 80; i++){
-    if (i % 5 === 0 && i % 7 === 0) { // Check if the number is divisible by both 5 and 7
-        console.log(`The number ${i} is divisible by both 5 and 7`);
-    }
-    // Output:
-    // The number 70 is divisible by both 5 and 7
-    // Explanation:
-    // The only number between 40 and 80 that is divisible by both 5 and 7 is 70.
-    // The code checks each number in the range and prints it if it meets the condition.
+const bike = {
+    Brand: "Hero",
+    Price: 120000,
+    Model: "Splendor"
+};
+const values = Object.values(bike);
+for (const value of values){
+    console.log(value); // Logs the values of the object
+    // Example output: Hero, 120000, Splendor
+    // Note: The output will be in the order of the properties defined in the object.
+
 }
