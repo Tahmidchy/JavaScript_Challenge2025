@@ -1,11 +1,17 @@
 /*
-TODO: Problem-28: Print from 1 to 25, but exclude numbers divisible by 3.
+TODO: Problem-28: Create a gadget object with name: iphone, price: 120000, and color: black. Delete the price using delete. Then try to access the price property and see if it works.
 */
 
 // Solution:
-for (let i = 1; i <= 25; i++){
-    if (i % 3 === 0) { // Check if the number is divisible by 3
-        continue; // Skip the number if it is divisible by 3
-    }
-    console.log(i); // Print the number
+
+const gadget = {
+    name: "iphone",
+    price: 120000,
+    color: "black"
 }
+delete gadget.price; // Delete the price property
+console.log(gadget.price); // Try to access the price property
+// Output: undefined  
+console.log(gadget); // Output: { name: "iphone", color: "black" }
+// The price property has been deleted, so accessing it returns undefined.
+// The price property has been deleted, so accessing it returns undefined.  

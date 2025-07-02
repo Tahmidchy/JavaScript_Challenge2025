@@ -1,12 +1,17 @@
 /*
-TODO: Problem-26: You want to print the numbers from 1 to 40, but you want to print them in such a way that the numbers divisible by 7 are skipped. For example, (7,14,21,) etc. will be skipped. Write a program where the numbers will be skipped.
+TODO: Problem-26: const Player = { Name Messi , Goals 800 , Club Inter Miami }; Freeze the object using the object freeze() method. Then add the new property and see if it works?
 */
 
 // Solution:
 
-for (let i = 1; i <= 40; i++){
-    if (i % 7 === 0) { // Check if the number is divisible by 7
-        continue; // Skip the number if it is divisible by 7
-    }
-    console.log(i); // Print the number
-}
+const player = {
+    Name: "Messi",
+    Goals: 800,
+    Club: "Inter Miami"
+};
+Object.freeze(player); // Freeze the object to prevent modifications
+player.Name = "Ronaldo"; // Attempt to change the Name property
+player.Goals = 1000; // Attempt to change the Goals property
+player.Club = "Al Nassr"; // Attempt to change the Club property
+console.log(player); // Output: { Name: "Messi", Goals: 800, Club: "Inter Miami" }
+// The properties of the player object remain unchanged, and any attempts to modify them are ignored.
