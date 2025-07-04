@@ -1,19 +1,15 @@
 /*
-TODO: Problem-3: You create an object called Cat and put information about the cat in that object.
+TODO: Problem - 3: Write a function for your family. Give it any name and then output the names of all the members of your family one by one.
 */
 
-// Solution: 
-const cat = {
-    name: 'Whiskers',
-    breed: 'Siamese',
-    age: 3,
-    color: 'Cream',
-    weight: '10 lbs',
-    isIndoor: true,
-    favoriteFood: ['Tuna', 'Chicken'],
-    ownerName: 'Alice',
-    playTime: function() {
-        console.log(`${this.name} loves to play with yarn!`);
-    }
+// Solution:
+
+function myFamily() {
+    console.log("John");
+    console.log("Jane");
+    console.log("Alice");
+    console.log("Bob");
+    console.log("Charlie");
 };
-console.log(cat);
+// Test the function
+myFamily();

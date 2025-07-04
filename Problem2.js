@@ -1,22 +1,19 @@
 /*
-TODO: Problem-2: Create an object called Tree that will contain information about what kind of tree it is, its height, its age, the name of the fruit, etc.
+TODO: Problem-2: Now write a function called myRoutine. Inside this, there will be a list of the tasks you do every morning after waking up. Write the names of each task on a single line in the console log.
 */
 
 // Solution:
 
-const tree = {
-    name: 'Apple Tree',
-    type: 'Deciduous',
-    height: '15 feet',
-    age: 10,
-    fruit: 'Apple',
-    leavesColor: 'Green',
-    location: 'Orchard',
-    isFruitBearing: true,
-    growthRate: 'Fast'
+function myRoutine() {
+    console.log("Wake up");
+    console.log("Brush teeth");
+    console.log("Take a shower");
+    console.log("Get dressed");
+    console.log("Have breakfast");
 };
-console.log(tree);
-console.log(tree.name); // Output: Apple Tree
-console.log(tree.type); // Output: Deciduous
-console.log(tree.height); // Output: 15 feet
-console.log(tree.age); // Output: 10
+// Test the function
+myRoutine();
+// Output:
+// Wake up
+// Brush teeth
+// Take a shower    

@@ -1,23 +1,32 @@
 /*
-TODO: Problem-9 : Create a laptop object. It will have properties like brand, price, hard disk, RAM, screenSize, etc. Use dot notation to extract screenSize.
+TODO: Problem-9: Your friend asked you to build a calculator using functions. A calculator that would not only add or subtract numbers, but also multiply and display them.
 */
 
-// Solution:
+// Solution :
 
-const laptop = {
-    brand : "Hp",
-    price : 42000,
-    SSD : "256GB",
-    RAM : "16GB",
-    screenSize : "13.6",
-    color : "Silver",
-    processor : "i5",
-    battery : "4 hours",
-    weight : "1.5kg",
-    warranty : "1 year",
-    graphics : "Intel Iris Xe",
-    operatingSystem : "Windows 11",
-    year : 2023,
-    model : "Hp Elitebook",
+function calculator(num1, num2, operation) {
+    // Perform the specified operation
+    switch (operation) {
+        case 'add':
+            return num1 + num2;
+        case 'subtract':
+            return num1 - num2;
+        case 'multiply':
+            return num1 * num2;
+        case 'divide':
+            if (num2 !== 0) {
+                return num1 / num2;
+            } else {
+                return 'Cannot divide by zero';
+            }
+        default:
+            return 'Invalid operation';
+    }
 };
-console.log(laptop.screenSize); // Output: 13.6
+// Example usage
+const num1 = 20;
+const num2 = 15;
+const operation = 'multiply'; // Change this to 'add', 'subtract', or 'multiply' as needed
+// Call the calculator function with the numbers and operation
+const result = calculator(num1, num2, operation);
+console.log(`The result of the ${operation} operation is: ${result}`); // Output: The result of the multiply operation is: 300

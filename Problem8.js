@@ -1,17 +1,20 @@
 /*
-TODO: Problem-8: You will create an object called Player. It will have properties like name, age, sport, team, etc. Then you will need to console the name of his team using dot notation from the object.
+TODO: Problem-8: Write a function to find the sum of the ages of the father and son.
 */
 
-// Solution: 
+// Solution :
 
-const player = {
-    name: "John Doe",
-    age: 25,
-    sport: "Football",
-    team: "FC Awesome",
-    position: "Goalkeeper",
-    height: 1.85,
-    weight: 80,
+function sumOfAges(fatherAge, sonAge) {
+  
+    
+    // Calculate the sum of ages
+    const sum = fatherAge + sonAge;
+    
+    // Return the result
+    return sum;
 };
-console.log(player.team); // Output: FC Awesome
-console.log(player.name); // Output: John Doe
+// Example usage
+const fatherAge = 40;
+const sonAge = 10;
+const result = sumOfAges(fatherAge, sonAge);
+console.log(`The sum of the ages of the father and son is: ${result}`); // Output: The sum of the ages of the father and son is: 50

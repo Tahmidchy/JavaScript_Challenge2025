@@ -1,48 +1,14 @@
 /*
-TODO: Problem-4: Create an object named Father for your father and enter his name, occupation, age, number of children, etc. into it.
+TODO: Problem-4: Write a function called taskDone. In the function, display the 5 tasks you completed throughout the day in a single line console log.
 */
 
 // Solution:
-
-const father = {
-    name: 'John',
-    occupation: 'Engineer',
-    age: 50,
-    numberOfChildren: 2,
-    hobbies: ['fishing', 'reading', 'gardening'],
-    isMarried: true,
-    favoriteFood: ['pasta', 'steak', 'salad'],
-    address: '123 Elm St, Springfield',
-    phoneNumber: '555-1234',
-    workExperience: 25,
-    languagesSpoken: ['English', 'Spanish'],
-    favoriteSport: 'soccer',
-    carModel: 'Toyota Camry',
-    petName: 'Buddy',
-    petType: 'cat',
-    petAge: 5,
-    petBreed: 'Golden Retriever',
-    familyTraditions: ['family dinners', 'holiday gatherings'],
-    favoriteVacationSpot: 'Hawaii',
-    favoriteMusicGenre: 'rock',
-    favoriteMovie: 'Inception',
-    favoriteBook: 'To Kill a Mockingbird',
-    favoriteSeason: 'summer',
-    favoriteColor: 'blue',
-    favoriteHoliday: 'Christmas',
-    favoriteDessert: 'chocolate cake',
-    favoriteDrink: 'coffee',
-    favoriteSportTeam: 'New York Yankees',
-    favoriteBoardGame: 'Monopoly',
-    favoriteVideoGame: 'The Legend of Zelda',
-    favoriteOutdoorActivity: 'hiking',
-    favoriteIndoorActivity: 'reading',
-    favoriteAnimal: 'cat',
-    favoriteFlower: 'rose',
-    favoriteFruit: 'apple',
-    favoriteVegetable: 'carrot',
-    favoriteSnack: 'chips',
-    favoriteIceCreamFlavor: 'vanilla',
-    };
-console.log(father);
-console.log(father.name); // Output: John   
+function taskDone() {
+    console.log("Task 1 : Online Meeting with Client");
+    console.log("Task 2 : Code Review");
+    console.log("Task 3 : Team Standup");
+    console.log("Task 4 : Project Planning");
+    console.log("Task 5 : Documentation");
+};
+// Test the function
+taskDone();

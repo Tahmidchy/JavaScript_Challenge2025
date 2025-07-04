@@ -1,15 +1,11 @@
 /*
-TODO: Problem-1: You will create an object named after your teacher, which will contain your teacher's name, age, which subject he teaches, his mobile number, where he lives, and whether he is married. Create an object with this kind of information.
+TODO: Problem-1: Write a function called Juice. When called, it will output "Here, drink lemon juice."
 */
 
-// Solution:
-const teacher = {
-    name: "John Doe",
-    age: 45,
-    subject: "Math",
-    mobileNumber: "123-456-7890",
-    address: "123 Main St",
-    isMarried: true,
-    hobbies: ["reading", "traveling", "sports"],  
+// Solution: 
+
+function Juice() {
+    console.log("Here, drink lemon juice.");
 };
-console.log(teacher); 
+// Test the function
+Juice(); // Output: Here, drink lemon juice.

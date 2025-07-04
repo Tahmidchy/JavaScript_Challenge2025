@@ -1,27 +1,13 @@
 /*
-TODO: Problem-6:Create a bird object and put properties such as the bird's name, color, food, etc.
+TODO: Problem-6: You create a function called getFavFriend and display the function's output by entering your three friend's name in it.
 */
 
 // Solution:
 
-const bird = {
-    name: 'Sparrow',
-    color: 'Brown',
-    food: 'Seeds',
-    habitat: 'Urban areas',
-    wingspan: '20 cm',
-    canFly: true,
-    migrationPattern: 'Seasonal',
-    averageLifespan: '3 years',
-    nestingBehavior: 'Builds nests in trees or shrubs',
-    vocalization: 'Chirping',
-    conservationStatus: 'Least Concern',
-    scientificName: 'Passer domesticus',
-    family: 'Passeridae',
-    size: 'Small',
-    weight: '24 grams',
-    dietType: 'Omnivore',
-    breedingSeason: 'Spring and Summer'
+function getFavFriend(friend1, friend2, friend3) {
+    console.log("My favorite friends are: " + friend1 + ", " + friend2 + ", and " + friend3);
 };
-console.log(bird);
-console.log(bird.name); // Output: Sparrow
+// Test the function
+getFavFriend("Alice", "Bob", "Charlie", "Dog" , "Cat"); // Output: My favorite friends are: Alice, Bob, and Charlie
+// getFavFriend("John", "Jane", "Doe"); // Output: My favorite friends are: John, Jane, and Doe
+// getFavFriend("Mike", "Sara", "Tom"); // Output: My favorite friends are: Mike, Sara, and Tom
