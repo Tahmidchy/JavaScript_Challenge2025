@@ -1,13 +1,11 @@
-/*
-TODO: Problem-6: You create a function called getFavFriend and display the function's output by entering your three friend's name in it.
+/* 
+TODO: Problem-6: If 1 pound = 0.453 kilograms, then write a function that converts pounds to kilograms.
 */
 
-// Solution:
+// Solution: 
 
-function getFavFriend(friend1, friend2, friend3) {
-    console.log("My favorite friends are: " + friend1 + ", " + friend2 + ", and " + friend3);
-};
-// Test the function
-getFavFriend("Alice", "Bob", "Charlie", "Dog" , "Cat"); // Output: My favorite friends are: Alice, Bob, and Charlie
-// getFavFriend("John", "Jane", "Doe"); // Output: My favorite friends are: John, Jane, and Doe
-// getFavFriend("Mike", "Sara", "Tom"); // Output: My favorite friends are: Mike, Sara, and Tom
+function poundsToKilograms(pounds) {
+    return pounds * 0.453;
+}
+// function test 
+console.log(poundsToKilograms(10)); // Output: 4.53

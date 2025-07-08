@@ -1,15 +1,13 @@
-/*
-TODO: Problem - 3: Write a function for your family. Give it any name and then output the names of all the members of your family one by one.
-*/
+/* 
+TODO: Problem-3: Write a function to convert hours to seconds. If I give it hours, it will convert it to seconds.
+*/ 
 
-// Solution:
+// Solution: 
 
-function myFamily() {
-    console.log("John");
-    console.log("Jane");
-    console.log("Alice");
-    console.log("Bob");
-    console.log("Charlie");
-};
-// Test the function
-myFamily();
+function hoursToSeconds(hours) {
+    // 1 hour = 3600 seconds
+    const secondsInHours = 3600;
+    return hours * secondsInHours;
+}
+// Test the function with some examples:
+console.log(hoursToSeconds(1)); // Output: 3600

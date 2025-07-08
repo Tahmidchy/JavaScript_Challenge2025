@@ -1,19 +1,13 @@
-/*
-TODO: Problem-2: Now write a function called myRoutine. Inside this, there will be a list of the tasks you do every morning after waking up. Write the names of each task on a single line in the console log.
+/* 
+TODO:Problem-2: We know that 1 kilowatt hour is equal to 860 kilocalories. So write a function that will convert any kilowatt hour into kilocalories.
 */
 
-// Solution:
+// Solution: 
 
-function myRoutine() {
-    console.log("Wake up");
-    console.log("Brush teeth");
-    console.log("Take a shower");
-    console.log("Get dressed");
-    console.log("Have breakfast");
-};
+function kilowattHourToKilocalories(kilowattHour) {
+    // 1 kilowatt hour = 860 kilocalories
+    const kilocaloriesInKilowattHour = 860;
+    return kilowattHour * kilocaloriesInKilowattHour;
+}
 // Test the function
-myRoutine();
-// Output:
-// Wake up
-// Brush teeth
-// Take a shower    
+console.log(kilowattHourToKilocalories(5));

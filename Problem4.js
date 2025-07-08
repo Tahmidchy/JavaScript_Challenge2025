@@ -1,14 +1,13 @@
 /*
-TODO: Problem-4: Write a function called taskDone. In the function, display the 5 tasks you completed throughout the day in a single line console log.
+TODO: Problem-4: Write a function that converts centimeters to meters. You know that 1 meter is equal to 100 centimeters.
 */
 
-// Solution:
-function taskDone() {
-    console.log("Task 1 : Online Meeting with Client");
-    console.log("Task 2 : Code Review");
-    console.log("Task 3 : Team Standup");
-    console.log("Task 4 : Project Planning");
-    console.log("Task 5 : Documentation");
-};
+// Solution: 
+
+function centimetersToMeters(centimeters) {
+    // We know that 1 meter is equal to 100 centimeters, so we can divided the centimeters by 100 to get the meters.
+    let meters = centimeters / 100;
+    return meters;
+}
 // Test the function
-taskDone();
+console.log(centimetersToMeters(100));  // Output: 1

@@ -1,16 +1,11 @@
 /*
-TODO: Problem-7: Write a function called introduceMyself. When you call the function, it will display your name, age, address, phone number, height, and your favorite food as output.
+TODO: Problem-7: Create a function to convert yards to meters. 1 yard = 0.91 meters
 */
 
-// Solution:
+// Solution: 
 
-function introduceMyself() {
-    console.log("My name is John Doe.");
-    console.log("I am 25 years old.");
-    console.log("I live at 123 Main Street, Cityville.");
-    console.log("My phone number is (123) 456-7890.");
-    console.log("I am 5 feet 10 inches tall.");
-    console.log("My favorite food is Biryani.");
-};
+function yardsToMeters(yards) {
+    return yards * 0.91;
+}
 // Test the function
-introduceMyself();
+console.log(yardsToMeters(10)); // Output: 9.1
