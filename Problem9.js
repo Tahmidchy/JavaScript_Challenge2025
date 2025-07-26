@@ -1,32 +1,15 @@
-/*
-TODO: Problem-9: Your friend asked you to build a calculator using functions. A calculator that would not only add or subtract numbers, but also multiply and display them.
+/* 
+TODO: Problem-9: Write a function that converts inches to feet. We know that there are 12 inches in a foot. ( this problem from example 2 as a batter testing using this.) But in here we are also show in "6 feet 3 inches" format.
 */
+// Solution: 
 
-// Solution :
-
-function calculator(num1, num2, operation) {
-    // Perform the specified operation
-    switch (operation) {
-        case 'add':
-            return num1 + num2;
-        case 'subtract':
-            return num1 - num2;
-        case 'multiply':
-            return num1 * num2;
-        case 'divide':
-            if (num2 !== 0) {
-                return num1 / num2;
-            } else {
-                return 'Cannot divide by zero';
-            }
-        default:
-            return 'Invalid operation';
-    }
-};
-// Example usage
-const num1 = 20;
-const num2 = 15;
-const operation = 'multiply'; // Change this to 'add', 'subtract', or 'multiply' as needed
-// Call the calculator function with the numbers and operation
-const result = calculator(num1, num2, operation);
-console.log(`The result of the ${operation} operation is: ${result}`); // Output: The result of the multiply operation is: 300
+function inchToFeet2(inch){
+    const feetFraction = inch / 12;
+    const feetNumber = parseInt(feetFraction);
+    const inchRemaining = inch % 12;
+    const result = feetNumber + " feet " + inchRemaining + " inches";
+    return result;
+}
+// Testing the function with a value of 75
+const shuvoHeight = inchToFeet2(75);
+console.log(shuvoHeight); // Output: 6 feet 3 inches
