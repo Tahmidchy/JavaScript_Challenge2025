@@ -1,23 +1,26 @@
 /*
-TODO: Problem-12: Create a library object and add these properties to that object: Name: Public Library, Location: Dhaka, and Books: 5000. Log the location to the console using dot notation.
+TODO: Problem-12 : Write a function that takes the input of marks and returns A if someone gets a mark of 80 or above, B if they get a mark of 70 to 79, C if they get a mark of 60 to 69, D if they get a mark of 50 to 59, and F if they get a mark of less than 50.
 */
 
-// Solution:
+// Solution: 
 
-const library = {
-    name: 'Public Library',
-    location: 'Dhaka',
-    books: 5000,
-    established: 1990,
-    address: {
-        street: '123 Main St',
-        city: 'Dhaka',
-        zipCode: '1212'
-    },
-    services: ['Reading Room', 'Internet Access', 'Book Lending'],
+function getGrade(marks) {
+    if (marks >= 80) {
+        return "Your grade is A";
+    } else if (marks >= 70) {
+        return "Your grade is B";
+    } else if (marks >= 60) {
+        return "Your grade is C";
+    } else if (marks >= 50) {
+        return "Your grade is D";
+    } else {
+        return "Your grade is F";
+    }
 };
-console.log(library.location); // Output: Dhaka
-// console.log(library.name); // Output: Public Library
-// console.log(library.books); // Output: 5000
-// console.log(library.established); // Output: 1990
-// console.log(library.address); // Output: { street: '123 Main St', city: 'Dhaka', zipCode: '1212' }
+// Test the function
+console.log(getGrade(85)); // Output: Your grade is A
+console.log(getGrade(75)); // Output: Your grade is B   
+console.log(getGrade(65)); // Output: Your grade is C
+console.log(getGrade(55)); // Output: Your grade is D
+console.log(getGrade(45)); // Output: Your grade is F
+console.log(getGrade(80)); // Output: Your grade is A

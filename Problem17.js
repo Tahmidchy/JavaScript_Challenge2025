@@ -1,17 +1,22 @@
 /*
-TODO: Problem-17: You will list the roll numbers of students from 31 to 58 in the school and then use a for loop to find the sum of those numbers.
+TODO: Problem-17: Write a function that subtracts 1 from each odd number in an Array, creates a new Array, and returns it.
 */
 
-// Solution:
+// Solution: 
 
-let sum = 0;
-for(let i = 31; i <= 58; i++){
-    sum += i; // Add the current roll number to the sum
-}
-
-console.log(`The sum of roll numbers from 31 to 58 is: ${sum}`);
-// Output:
-// The sum of roll numbers from 31 to 58 is: 2654
-// Explanation:
-// The sum of roll numbers from 31 to 58 is calculated by adding all the numbers in that range.
-// The formula for the sum of an arithmetic series is: n/2 * (first term + last term)
+function subtractOneFromOddNumbers(numbers) {
+    const newArray = [];
+    for (const number of numbers) {
+        if (number % 2 !== 0) { // Check if the number is odd
+            newArray.push(number - 1); // Subtract 1 from the odd number and add to the new array
+        }
+    }
+    return newArray; // Return the new array with modified odd numbers
+};
+// Test the function
+console.log(subtractOneFromOddNumbers([1, 2, 3, 4, 5])); // Output: [0, 2, 4]
+console.log(subtractOneFromOddNumbers([2, 4, 6, 8])); // Output: []
+console.log(subtractOneFromOddNumbers([10, 15, 20, 25])); // Output: [14, 24]
+console.log(subtractOneFromOddNumbers([1, 3, 5])); //    Output: [0, 2, 4]
+console.log(subtractOneFromOddNumbers([0, 1, 2, 3, 4, 5])); // Output: [0, 2, 4]
+console.log(subtractOneFromOddNumbers([-1, -3, -5, -7])); // Output: [-2, -4, -6, -8]

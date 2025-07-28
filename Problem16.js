@@ -1,19 +1,29 @@
 /*
-TODO: Problem-16: Create an object called Book that contains the name of the book, the name of the book, and the price of the book. Then log all the properties (keys) and all the values ​​of the object to the console.
+TODO: Problem-16: After finding the average of odd numbers in an array, return the value up to two decimal places.
 */
 
-// Solution: 
+//Solution: 
 
-const Book = {
-    name: "The Great Gatsby",
-    author: "F. Scott Fitzgerald",
-    price: "$10.99"
+function averageOfOddNumbers(numbers) {
+    let sum = 0;
+    let count = 0;
+
+    for (const number of numbers) {
+        if (number % 2 !== 0) { // Check if the number is odd
+            sum += number; // Add to the sum
+            count++; // Increment the count of odd numbers
+        }
+    }
+
+    if (count === 0) {
+        return "No odd numbers found"; // Return message if no odd numbers are found
+    }
+
+    const average = sum / count; // Calculate the average
+    return average.toFixed(2); // Return the average rounded to two decimal places
 };
-const keys = Object.keys(Book);
-for (const key of keys) {
-    console.log(key); // Logs the keys of the object
-}
-const values = Object.values(Book);
-for (const value of values) {
-    console.log(value); // Logs the values of the object
-};
+
+// Test the function
+console.log(averageOfOddNumbers([1, 2, 3, 4, 5])); // Output: "3.00"
+console.log(averageOfOddNumbers([2, 4, 6, 8])); // Output: "No odd numbers found"
+console.log(averageOfOddNumbers([10, 15, 20, 25])); // Output: "20.00"

@@ -1,22 +1,19 @@
 /*
-TODO: Problem-14: Create a family object in which one property will be Father and its value will be another object and Father will have Father's name, age and profession, similarly there will be a property called Mother and that property and an object inside it will have Mother's name, age and profession, now your job is to find Mother's age property along with your Father's age property. Then find the sum of those two ages and show it as output.
+TODO: Problem-15: Write a function that returns "No odd numbers Found" if there are no odd numbers in an array, and "Odd number found" if there are odd numbers.
 */
 
 // Solution:
 
-const family = {
-    Father: {
-        name: 'John',
-        age: 45,
-        profession: 'Engineer',
-    },
-    Mother: {
-        name: 'Emma',
-        age: 42,
-        profession: 'Teacher',
-    },
+function checkOddNumbers(numbers) {
+    for (const number of numbers) {
+        if (number % 2 !== 0) { // Check if the number is odd
+            return "Odd number found"; // Return if an odd number is found
+        }
+    }
+    return "No odd numbers Found"; // Return if no odd numbers are found
 };
-const fatherAge = family.Father.age;
-const motherAge = family.Mother.age;
-const sumOfAges = fatherAge + motherAge;
-console.log(`Father and Mother age sum is : ${sumOfAges}`);
+// Test the function
+console.log(checkOddNumbers([1, 2, 3, 4, 5])); // Output: "Odd number found"
+console.log(checkOddNumbers([2, 4, 6, 8])); // Output: "No odd numbers Found"
+console.log(checkOddNumbers([10, 12, 14])); // Output: "No odd numbers Found"
+console.log(checkOddNumbers([1, 3, 5])); // Output: "Odd number found"
