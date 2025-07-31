@@ -1,18 +1,14 @@
 /*
-TODO: Problem-20:You have created an object named Bike with properties Brand: "Hero", Price: 120000, and Model: "Splendor". Use the object's values() method to retrieve all the values.
+TODO: Problem-20: Just a program write where you just swap the values of two variables  using a third variable.
 */
 
 // Solution: 
 
-const bike = {
-    Brand: "Hero",
-    Price: 120000,
-    Model: "Splendor"
-};
-const values = Object.values(bike);
-for (const value of values){
-    console.log(value); // Logs the values of the object
-    // Example output: Hero, 120000, Splendor
-    // Note: The output will be in the order of the properties defined in the object.
-
-}
+let a = 5;
+let b = 10;
+// Swapping values without using a third variable
+console.log("Before swapping: a =", a, ", b =", b);
+let temp = a; // Store the value of a in a temporary variable
+a = b; // Assign the value of b to a 
+b = temp; // Assign the value of the temporary variable to b
+console.log("After swapping: a =", a, ", b =", b);

@@ -1,11 +1,17 @@
 /*
-TODO: Problem-19: There is an object called Phone, const Phone = { Brand: "Samsung", Model: "Galaxy S21", Price: 85000 }; For this, run a for of loop using the object key and log each property and its value to the console.
+TODO: Problem-19: Create a function that removes duplicate values ​​from an array and stores the single values ​​in a new array.
 */
-
 // Solution:
-const phone = { Brand: "Samsung", Model: "Galaxy S21", Price: 85000 };
-const keys = Object.keys(phone);
-for (const key of keys) {
-    console.log(`${key}: ${phone[key]}`); // Logs the key and value of the object
-    // Example output: Brand: Samsung, Model: Galaxy S21, Price: 85000  
-}
+
+function noDuplicate(array) {
+    const unique = [];
+    for (const items of array) {
+        if(unique.includes(items) === false) { // Check if the item is not already in the unique array
+            unique.push(items); // If not, add it to the unique array
+        }
+    }
+    return unique; // Return the array with unique items
+};
+// Test the function
+const uniqueArray = noDuplicate([1, 2, 3, 4, 5, 1, 2, 3]);
+console.log(uniqueArray); // Output: [1, 2, 3, 4, 5]
