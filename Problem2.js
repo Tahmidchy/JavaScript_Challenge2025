@@ -1,13 +1,10 @@
-/* 
-TODO:Problem-2: We know that 1 kilowatt hour is equal to 860 kilocalories. So write a function that will convert any kilowatt hour into kilocalories.
+/*
+TODO: Problem-2: Destructuring the Phone and Price properties from the Item object. const item ={ name: "Mobile",price:20000,phone:"Samsung"}
 */
 
-// Solution: 
+// Solution:
 
-function kilowattHourToKilocalories(kilowattHour) {
-    // 1 kilowatt hour = 860 kilocalories
-    const kilocaloriesInKilowattHour = 860;
-    return kilowattHour * kilocaloriesInKilowattHour;
-}
-// Test the function
-console.log(kilowattHourToKilocalories(5));
+const item = { name: "Mobile", price: 20000, phone: "Samsung" };
+const { phone, price } = item;
+console.log(phone); // Output: Samsung
+console.log(price); // Output: 20000

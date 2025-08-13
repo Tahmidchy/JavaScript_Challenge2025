@@ -1,11 +1,11 @@
 /*
-TODO: Problem-7: Create a function to convert yards to meters. 1 yard = 0.91 meters
+TODO: Problem-7: Separate the name and city from the person object. If there is no phone, set the default value N/A , const person ={ name:"Rahim",city:"Dhaka"} 
 */
 
-// Solution: 
+// Solution:
 
-function yardsToMeters(yards) {
-    return yards * 0.91;
-}
-// Test the function
-console.log(yardsToMeters(10)); // Output: 9.1
+const person = { name: "Rahim", city: "Dhaka" };
+const { name, city, phone = "N/A" } = person;
+console.log(name); // Output: Rahim
+console.log(city); // Output: Dhaka
+console.log(phone); // Output: N/A

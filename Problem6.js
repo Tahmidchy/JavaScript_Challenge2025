@@ -1,11 +1,12 @@
-/* 
-TODO: Problem-6: If 1 pound = 0.453 kilograms, then write a function that converts pounds to kilograms.
+/*
+TODO: Problem-6: Separate the first and second values by destructuring the function return.function multiply(a,b) { return [a*3,b*3];} .
 */
 
-// Solution: 
+// Solution:
 
-function poundsToKilograms(pounds) {
-    return pounds * 0.453;
+function multiply(a, b) {
+    return [a * 3, b * 3];
 }
-// function test 
-console.log(poundsToKilograms(10)); // Output: 4.53
+const [firstValue, secondValue] = multiply(2, 4);
+console.log(firstValue); // Output: 6
+console.log(secondValue); // Output: 12

@@ -1,15 +1,10 @@
-/* 
-TODO: Problem-1: You know that there are 1760 yards in a mile. So write a function that can find out how many yards are in 13 miles.
-
+/*
+TODO: Problem-1: Separates brand property from object. const product ={ name:"Laptop",price:50000,brand:"Dell"};
 */
 
-// Solution :
+// Solution:
 
-function YeardsInMiles(miles){
-    // 1 mile = 1760 yards
-    const YeardsInMiles = 1760;
-    return miles * yeardsInMiles;
-}
-// Test the function
-console.log(YeardsInMiles(13));
-
+const product = { name: "Laptop", price: 50000, brand: "Dell" };
+const { brand, ...rest } = product;
+console.log(brand); // Output: Dell
+console.log(rest); // Output: { name: 'Laptop', price: 50000 }
