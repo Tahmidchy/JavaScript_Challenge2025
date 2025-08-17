@@ -1,15 +1,16 @@
-/* 
-TODO: Problem-9: Write a function that converts inches to feet. We know that there are 12 inches in a foot. ( this problem from example 2 as a batter testing using this.) But in here we are also show in "6 feet 3 inches" format.
+/*
+TODO: Problem-9: There is a product object const product = { name : "Laptop", price:50000, brand : "Dell" }; Keep the remaining properties except the name in a separate object.
 */
-// Solution: 
 
-function inchToFeet2(inch){
-    const feetFraction = inch / 12;
-    const feetNumber = parseInt(feetFraction);
-    const inchRemaining = inch % 12;
-    const result = feetNumber + " feet " + inchRemaining + " inches";
-    return result;
-}
-// Testing the function with a value of 75
-const shuvoHeight = inchToFeet2(75);
-console.log(shuvoHeight); // Output: 6 feet 3 inches
+// Solution:
+const product = { name: "Laptop", price: 50000, brand: "Dell" };
+const { name, ...remainingProperties } = product;
+console.log(remainingProperties); // Output: { price: 50000, brand: 'Dell' }
+// The remainingProperties object now contains all properties of product except for name.
+// You can also verify the output by logging it
+console.log(remainingProperties); // { price: 50000, brand: 'Dell' }
+// This code uses destructuring to extract the 'name' property and collect the rest into 'remainingProperties'.
+// This is a concise way to keep the remaining properties in a separate object.
+// The remainingProperties object now contains all properties of product except for name.
+console.log(name); // Output: Laptop
+// The 'name' variable still holds the value of the name property.
