@@ -1,17 +1,9 @@
 /*
-TODO: Problem-19: Create a function that removes duplicate values ​​from an array and stores the single values ​​in a new array.
+TODO: Problem-19: const young = { name: "Arif", age: 30, country: " B Baria" }. Make a copy of this object and print it with all the properties except country in the new object.
 */
-// Solution:
 
-function noDuplicate(array) {
-    const unique = [];
-    for (const items of array) {
-        if(unique.includes(items) === false) { // Check if the item is not already in the unique array
-            unique.push(items); // If not, add it to the unique array
-        }
-    }
-    return unique; // Return the array with unique items
-};
-// Test the function
-const uniqueArray = noDuplicate([1, 2, 3, 4, 5, 1, 2, 3]);
-console.log(uniqueArray); // Output: [1, 2, 3, 4, 5]
+// Solution: 
+
+const young = { name: "Arif", age: 30, country: "B Baria" };
+const { country, ...youngWithoutCountry } = young; // Using destructuring to exclude 'country' property
+console.log(youngWithoutCountry); // Output: { name: "Arif", age: 30 }

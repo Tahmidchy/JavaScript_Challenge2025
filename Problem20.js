@@ -1,14 +1,11 @@
 /*
-TODO: Problem-20: Just a program write where you just swap the values of two variables  using a third variable.
+TODO: Problem-20: const car = { make: "Toyota", model:"Corolla",year:2020 }. Create a copy of this object and create a new object by updating the year to 2032.
 */
 
-// Solution: 
+// Solution:
 
-let a = 5;
-let b = 10;
-// Swapping values without using a third variable
-console.log("Before swapping: a =", a, ", b =", b);
-let temp = a; // Store the value of a in a temporary variable
-a = b; // Assign the value of b to a 
-b = temp; // Assign the value of the temporary variable to b
-console.log("After swapping: a =", a, ", b =", b);
+const car = { make: "Toyota", model: "Corolla", year: 2020 };
+const updatedCarYear = { ...car, year: 2032 }; //  Using Spread Operator to
+// create a new object with updated year
+console.log(updatedCarYear); // Output: { make: "Toyota", model: "Corolla", year: 2032 }
+// Note: The original object 'car' remains unchanged.
