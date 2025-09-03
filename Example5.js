@@ -1,11 +1,15 @@
-// In here we are using JavaScript destructing with Function arguments
+/*
+TODO: Example-5: Now we are testing case sensitive issue are string method that's is Lower case and upper case.
+*/
 
-// Solution 5:
+// Example-5: 
 
-function doubleThem(a,b) {
-    return [a * 2, b * 2];
+const subjects = 'Chemistry';
+const books = 'chemistry';
+if(subjects === books){
+    console.log(' I am reading Chemistry');
+} else {
+    console.log('Trying to understand how to read chemistry');
 }
-// In here we are using JavaScript destructing with Function arguments
-const [firstDouble, secondDouble] = doubleThem(5, 10);
-//result
-console.log(firstDouble, secondDouble); // Output: 10
+
+// OutPut : are coming from else because upper case string and lower case string are not same.

@@ -1,10 +1,7 @@
-// In here we testing javaScript Object destructuring with renamed properties and default values.
+/*
+TODO: Example-3: Now We are testing includes() Method in String As like array.
+*/
+// Example-3:
 
-// Solution 3:
-
-const book= {
-    title: "1984", author: "George Orwell"};
-    const {title: BookTitle, author: BookAuthor} = book;
-//result
-console.log(BookTitle); // Output: 1984
-console.log(BookAuthor); // Output: George Orwell
+const name = 'Abid';
+console.log(name.includes('d')); // OutPut : True.

@@ -1,8 +1,13 @@
-// In here we are using JavaScript destructuring  Array 
+/*
+TODO: Example-8: Now we are testing comparison operator.
+*/
 
-// Solution 8:
+// Example-8: 
 
-const numbers = [1,2,3,4,5];
-const [,second, fourth] = numbers;
-console.log(second); // Output: 2
-console.log(fourth); // Output: 4
+const subject = 'Chemistry';
+const book = 'chemistry';
+if(subject.toLowerCase()===book.toLowerCase()){
+    console.log('I am reading book');
+}else{
+    console.log('I am try to understanding to chemistry');
+}

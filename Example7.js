@@ -1,9 +1,9 @@
-// In here we are Using JavaScript destructing with Function arguments
+/*
+TODO: Example-7: Now we are testing on ToUpperCase.
+*/
 
-// Solution 7:
+// Example-7: 
 
-function sum ([a,b]) {
-    return a + b;
-}
-// In here we are using JavaScript destructing with Function arguments
-console.log(sum([5, 10])); // Output: 15
+const name = 'noman d Man';
+const upper = name.toUpperCase();
+console.log(upper);

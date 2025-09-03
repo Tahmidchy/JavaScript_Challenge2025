@@ -1,16 +1,8 @@
-// In here testing how Destructuring works in JavaScript.
+/*
+TODO: In here we are testing string ES6 version . in here we see string length as like array length.
+*/
 
-// Solution 1:
+// Example-1: 
 
-const actor = {
-    name: 'Tom Cruise',
-    age: 60,
-    movies: ['Top Gun', 'Mission Impossible'],
-    money: 50000000
-}
-// Destructuring the object to get the values of name, age, movies and money
-const name = actor.name;
-const age = actor.age;
-const movies = actor.movies;
-const money = actor.money;
-console.log(name, age, movies, money); // Output: Tom Cruise 60 [ 'Top Gun', 'Mission Impossible' ] 50000000
+const country = 'Bangladeshi';
+console.log(country.length); // Output: 11
