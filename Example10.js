@@ -1,12 +1,7 @@
 /*
-TODO: Example-10: REST operator with an Object
+TODO: Example-10: Now we are testing on Split method testing.
 */
-// Solution:
 
-const person = { name:'Alice', age: 30, city: 'New York', country: 'USA' };
-const { name, age, city, ... DetailsInfo } = person;
-console.log(name);  // Output: Alice
-console.log(age);   // Output: 30
-console.log(city);  // Output: New York
-console.log(DetailsInfo); // Output: { country: 'USA' }
-// The DetailsInfo object contains the remaining properties not destructured
+// Example-10: 
+const sentence = 'i am a good and hardworking person';
+console.log(sentence.split(''));

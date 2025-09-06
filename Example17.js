@@ -1,9 +1,9 @@
 /*
-TODO: Example-17: Default export how to successfully we are testing .
+TODO: Now we are testing replace method.
 */
 
-// Example-17: Default export
+// Example-17: 
 
-export default function greet(){
-    return "Hello, World!";
-}
+const text = "I Love Programming.Programming is fun!";
+const result = text.replace("Programming","Coding");
+console.log(result);

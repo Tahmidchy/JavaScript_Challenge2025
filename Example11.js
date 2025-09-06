@@ -1,16 +1,7 @@
 /*
-TODO: Rest operator with a Function
+TODO: Example-11: Now We are testing on string join method testing.
 */
-// Solution:
 
-function multiply(multiplier, ...numbers) {
-    return numbers.map(num => num * multiplier);
-}
-// Usage:
-console.log(multiply(5, 1, 2, 3, 4)); //
-// Output: [ 5, 10, 15, 20 ]
-// The function takes a multiplier and an arbitrary number of numbers, returning an array of the multiplied values.
-// The first two elements are destructured, and the rest are collected into the 'rest'
-// array.
-// The rest operator allows us to handle an indefinite number of arguments in a function, making it flexible and adaptable to various inputs.
-// The rest operator is used to collect the remaining arguments into an array.
+// Example-11: 
+const realFriend = ['Rahim','Kahim','dahim','Iahim','fahim','sahim'];
+console.log(realFriend.join('|')); //every output add this |
