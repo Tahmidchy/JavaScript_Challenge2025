@@ -1,18 +1,12 @@
 /*
-TODO: Export now code here
+TODO: Example-19: Now we are testing complex part of string method reverse method
 */
 
-// Example-19: now code export now
+// Example-19: 
 
-// Example19.js
-export function add(a, b) {
-    return a + b;
+const sentence = " I am learning Web Dev";
+let reverse = "";
+for(const letter of sentence){
+    reverse = letter + reverse;
 }
-
-export function multiply(a, b) {
-    return a * b;
-}
-// Note: Ensure that this file is correctly referenced in your import statements in other files.
-// If you are using a module bundler or a specific environment, ensure that it supports ES6 modules.
-// If you are running this in a browser, ensure that the script type is set to "module" in your HTML file:
-// <script type="module" src="Example19.js"></script>
+console.log(reverse);
