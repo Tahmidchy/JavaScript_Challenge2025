@@ -1,14 +1,9 @@
 /*
-TODO: Problem-10: const project = { id: 101,title:"Web App",budget:3000,client:"Tech Corp" };Here, except for the title, keep all the properties in a separate object.
+TODO: Problem-10: You have been given the names of a bunch of your friends in the form of a string 'Raju,Rana,Hasan,Kabir,Mahi', now extract their names separately and create an array.
 */
 
-// Solution: 
-const project = {
-    id: 101,
-    title: "Web App",
-    budget: 3000,
-    client: "Tech Corp"
-};
-const{title, ...otherDetails} = project;
-console.log(title); // Output: Web App
-console.log(otherDetails); // Output: { id: 101, budget: 3000
+// Solution:
+
+const friendsString = 'Raju,Rana,Hasan,Kabir,Mahi';
+const friendsArray = friendsString.split(','); // Split the string by commas to create an array 
+console.log(friendsArray); // Output: ['Raju', 'Rana', 'Hasan', 'Kabir', 'Mahi']

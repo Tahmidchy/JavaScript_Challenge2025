@@ -1,25 +1,9 @@
 /*
-TODO: Problem-13: Write a function that takes all but two parameters using the rest operator. The function will return the sum of the remaining parameters.
+TODO: Problem-13: There is an array.language =["JavaScript", "Python", "Java", "C++"] This array will convert each language name into a string and add a semicolon between each one.
 */
 
-// Solution: 
+// Solution:
 
-function sumRestParameters(a,b,...rest) {
-    //rest will contain all parameters except the first two
-    let sum = 0;
-    for (let num of rest) {
-        sum += num;
-    }
-    return sum;
-};
-// Test the function
-console.log(sumRestParameters(1, 2, 3, 4, 5)); // Output: 12
-console.log(sumRestParameters(10, 20, 30)); // Output: 30
-
-/*
-a and b are the first two parameters.
-
-...rest collects all remaining arguments into an array.
-
-The function sums up only the values in rest, ignoring a and b.
-*/
+let languages = ["JavaScript", "Python", "Java", "C++"];
+let languagesString = languages.join("; ");
+console.log(languagesString); // Output: "JavaScript; Python; Java; C++"

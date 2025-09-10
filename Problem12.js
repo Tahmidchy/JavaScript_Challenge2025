@@ -1,11 +1,9 @@
 /*
-TODO: Problem-12: There is an array of numbers. [10,20,3,30,300,3000] Put the rest of this except the first two elements into another array.
+TODO: Problem-12: "function if else while" This string must be divided by spaces and each keyword must be placed in an array.
 */
 
-// Solution: 
+// Solution:
 
-const numbers = [10, 20, 3, 30, 300, 3000];
-const [first, second, ...rest] = numbers;
-console.log(first); // Output: 10
-console.log(second); // Output: 20
-console.log(rest); // Output: [3, 30, 300, 3000
+let str = "function if else while";
+let keywordsArray = str.split(" ");
+console.log(keywordsArray); // Output: ["function", "if", "else", "while"]

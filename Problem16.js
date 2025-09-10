@@ -1,9 +1,12 @@
 /*
-TODO: Problem-16: Create a new array named myFruits, where const fruits =["Apple","Banana","Mango"] will contain the elements of this array, and at the end will be papaya and orange.
+TODO: Problem-16:  const str1 = "Push", const str2 = "Pop", const str3 = "shift", const str4 = "unshift" Use concat to create a string by combining these strings.
 */
 
-//Solution: 
+// Solution: 
 
-const fruits = ["Apple", "Banana", "Mango"];
-const myFruits = [...fruits, "Papaya", "Orange"]; // Using Spread Operator to add elements
-console.log(myFruits); // Output: ["Apple", "Banana", "Mango", "Papaya", "Orange"]
+const str1 = "Push";
+const str2 = "Pop"; 
+const str3 = "shift";
+const str4 = "unshift";
+const combinedStr = str1.concat(" ", str2, " ", str3, " ", str4);
+console.log(combinedStr); // Output: "Push Pop shift unshift"
