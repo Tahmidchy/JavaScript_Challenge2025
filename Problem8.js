@@ -1,11 +1,9 @@
 /*
-TODO: Problem-8: Extract the name and profession values from the Teacher object, keeping Job as the alias for the profession.const teacher ={ name:"Maria", profession:"Teacher"} 
-
+TODO: Program-8: Check if const language = 'JavaScript'; contains script by ignoring case
 */
 
-// Solution:
+//Solution: 
 
-const teacher = { name: "Maria", profession: "Teacher" };
-const { name, profession: Job } = teacher;
-console.log(name); // Output: Maria
-console.log(Job); // Output: Teacher
+const language = 'JavaScript';
+const containsScript = language.toLowerCase().includes('script'); // Check if 'script' is in the string, ignoring case
+console.log(containsScript); // Output: true

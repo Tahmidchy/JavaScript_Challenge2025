@@ -1,11 +1,9 @@
 /*
-TODO: Problem-17: There are three arrays: const frontEnd=["JavaScript"],const backEnd=["Node.js"],const database=["MongoDB"], These three arrays need to be combined using the spread operator.
+TODO: Problem-17: "Hello JavaScript Developers" Remove the "JavaScript" part from this string.
 */
 
 // Solution: 
 
-const frontEnd = ["JavaScript"];
-const backEnd = ["Node.js"];
-const database = ["MongoDB"];
-const fullStack = [...frontEnd, ...backEnd, ...database]; // Using Spread Operator to combine arrays
-console.log(fullStack); // Output: ["JavaScript", "Node.js", "MongoDB"]
+let str = "Hello JavaScript Developers";
+let result = str.replace("JavaScript ", "");
+console.log(result); // Output: "Hello Developers"
