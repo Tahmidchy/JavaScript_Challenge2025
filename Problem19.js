@@ -1,9 +1,9 @@
 /*
-TODO: Problem-19: const young = { name: "Arif", age: 30, country: " B Baria" }. Make a copy of this object and print it with all the properties except country in the new object.
+TODO: Problem-19: Create a string whose value is "Hi", repeat it 10 times and log it to the console.
 */
 
 // Solution: 
 
-const young = { name: "Arif", age: 30, country: "B Baria" };
-const { country, ...youngWithoutCountry } = young; // Using destructuring to exclude 'country' property
-console.log(youngWithoutCountry); // Output: { name: "Arif", age: 30 }
+let str = "Hi";
+let result = str.repeat(10);
+console.log(result); // Output: "HiHiHiHiHiHiHiHiHiHi"

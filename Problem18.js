@@ -1,9 +1,9 @@
 /*
-TODO: Problem-18: const website ={ name: "MySite", type: "e-commerce", status:"active"}. Create a new object and print it by adding the new property theme: "Dark" to this object.
+TODO: Problem-18: There is a string "Code more learn more". Extract the " learn" part from the string using substring
 */
 
 // Solution:
 
-const website = { name: "MySite", type: "e-commerce", status: "active" };
-const updatedWebsite = { ...website, theme: "Dark" }; // Using Spread Operator to add a new property
-console.log(updatedWebsite); // Output: { name: "MySite", type: "e-commerce", status: "active", theme: "Dark" }
+let str = "Code more learn more";
+let result = str.substring(10, 16);
+console.log(result); // Output: " learn"
