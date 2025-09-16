@@ -1,17 +1,8 @@
 /*
-TODO: Problem-21: If you understand the example of removing duplicates well, remove the duplicate numbers from this array [1,5,61,5,87,7,5,81,61];
+TODO: Problem-21: Create a string "I love an apple and an apple are tasty!" all " an apple " replace with " Mangoes" key.
 */
 
-// Solution: 
-
-function removeDuplicates(array) {
-    const uniqueArray = [];
-    for (const item of array){
-        if (uniqueArray.includes(item) === false) {
-            uniqueArray.push(item);
-        }
-    }
-    return uniqueArray;
-}
-const uniqueArray = removeDuplicates([1, 5, 61, 5, 87, 7, 5, 81, 61]);
-console.log("Array after removing duplicates:", uniqueArray);
+// Solution:
+let str = "I love an apple and an apple are tasty!";
+let result = str.replace(/ an apple /g, " Mangoes ");
+console.log(result); // Output: "I love Mangoes and Mangoes are tasty!"
