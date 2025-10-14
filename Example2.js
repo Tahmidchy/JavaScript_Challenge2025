@@ -1,8 +1,11 @@
 /*
-TODO: Example-2: Now we are checking string indexing value check as like array.
+TODO: Example-2: Now we are testing primitive type testing.
 */
 
-// Example-2: 
+// Example-2: Primitive Types
 
-const capital = "Dhaka";
-console.log(capital[0]); // Output: D
+let x = 5;
+let y = x; // Copying the value of x to y
+console.log(x,y); // Output: 5 5
+y = 10; // Changing y does not affect x
+console.log(x,y); // Output: 5 10

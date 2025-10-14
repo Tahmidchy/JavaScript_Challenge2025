@@ -1,7 +1,11 @@
 /*
-TODO: Example-3: Now We are testing includes() Method in String As like array.
+TODO: Example-3: Now we are testing Non-Primitive type testing. with re-assign.
 */
-// Example-3:
 
-const name = 'Abid';
-console.log(name.includes('d')); // OutPut : True.
+// Example-3: Non-Primitive Types
+
+let p = {job: "Developer"};
+let q = p; // Copying the reference of p to q
+console.log(p, q); // Output: { job: 'Developer' } { job: 'Developer' }
+q = {job: "backEnd"}; // Reassigning q to a new object
+console.log(p, q); // Output: { job: 'Developer' } { job: 'backEnd' }

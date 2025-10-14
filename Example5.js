@@ -1,15 +1,15 @@
 /*
-TODO: Example-5: Now we are testing case sensitive issue are string method that's is Lower case and upper case.
+TODO: Example-5: Now we are Testing primitive pass by value.
 */
 
-// Example-5: 
+// Example-5: Primitive Types
 
-const subjects = 'Chemistry';
-const books = 'chemistry';
-if(subjects === books){
-    console.log(' I am reading Chemistry');
-} else {
-    console.log('Trying to understand how to read chemistry');
+function changeValue(num) {
+    num = 20; // Reassigning num to a new value
+    console.log("Inside function:", num); // Output: Inside function: 20
 }
-
-// OutPut : are coming from else because upper case string and lower case string are not same.
+let originalNum = 10;
+console.log("Before function call:", originalNum); // Output: Before function call: 10
+changeValue(originalNum);
+console.log("After function call:", originalNum); // Output: After function call: 10
+// originalNum remains unchanged because primitives are passed by value 
