@@ -1,7 +1,6 @@
 /*
-TODO: Example-10: Now we are testing on Split method testing.
+TODO: Example-10: Now we are testing null and undefined values checking.
 */
 
-// Example-10: 
-const sentence = 'i am a good and hardworking person';
-console.log(sentence.split(''));
+console.log(typeof undefined); // "undefined"
+console.log(typeof null); // "object"

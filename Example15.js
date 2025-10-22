@@ -1,9 +1,15 @@
 /*
-TODO: Example-15: Now we are testing on repeat 
+TODO: Example-15: In here Testing of possible not exampled case.
 */
 
-// Example-15: 
+// Example-15: In here Testing of possible not exampled case.
 
-const str = "Hello!";
-const repeatedStr = str.repeat(3);
-console.log(repeatedStr); // OutPut : Hello!Hello!Hello!
+console.log(!!"Hello"); // true
+console.log(!!42);    // true
+console.log(!!{});   // true
+console.log(!![]);   // true
+console.log(!!"") // false
+console.log(!!0)  // false
+console.log(!!null) // false
+console.log(!!undefined) // false
+console.log(!!NaN) // false
