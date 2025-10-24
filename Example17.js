@@ -1,9 +1,12 @@
 /*
-TODO: Now we are testing replace method.
+TODO: Example-17: Testing double NOT operator with various values.
 */
 
-// Example-17: 
+// Example-17: Testing double NOT operator with various values.
 
-const text = "I Love Programming.Programming is fun!";
-const result = text.replace("Programming","Coding");
-console.log(result);
+const value = 0;
+if(!!value) {
+    console.log("Value is truthy");
+} else {
+    console.log("Value is falsy");
+}
