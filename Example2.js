@@ -1,11 +1,18 @@
 /*
-TODO: Example-2: Now we are testing primitive type testing.
+TODO: Example-2: Now we are testing on Type Validation Error.
 */
 
-// Example-2: Primitive Types
+// valid Type Validation
 
-let x = 5;
-let y = x; // Copying the value of x to y
-console.log(x,y); // Output: 5 5
-y = 10; // Changing y does not affect x
-console.log(x,y); // Output: 5 10
+function Multiply(num1,num2){
+    if(typeof num1 !== 'number' || typeof num2 !== 'number'){
+        return "Please provide valid numbers";
+    }
+    const result = num1 * num2;
+    return result;
+}
+const output = Multiply(10,20);
+console.log(output); // 200
+// invalid Type Validation
+const output2 = Multiply(10,'20');
+console.log(output2); // Please provide valid numbers

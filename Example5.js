@@ -1,15 +1,16 @@
 /*
-TODO: Example-5: Now we are Testing primitive pass by value.
+TODO: Example-5: Now we are testing on Syntax Errors and Validation Errors in JavaScript. Below are two examples demonstrating how to handle these errors effectively.
+1. Syntax Error Example:
+   In this example, we will demonstrate a common syntax error and how to fix it.
 */
 
-// Example-5: Primitive Types
+// Syntax Error Example
+/*
+for(Let i = 0; i < 5; i++ { // Missing closing parenthesis
+    console.log(i);
+} // Syntax Error: Unexpected token '{' */
 
-function changeValue(num) {
-    num = 20; // Reassigning num to a new value
-    console.log("Inside function:", num); // Output: Inside function: 20
+// Fixed Syntax Error
+for(let i = 0; i < 5; i++){ // Corrected 'Let' to 'let' and added closing parenthesis
+    console.log(i);
 }
-let originalNum = 10;
-console.log("Before function call:", originalNum); // Output: Before function call: 10
-changeValue(originalNum);
-console.log("After function call:", originalNum); // Output: After function call: 10
-// originalNum remains unchanged because primitives are passed by value 

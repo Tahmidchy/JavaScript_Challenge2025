@@ -1,13 +1,23 @@
 /*
-TODO: Example-4: Now we are testing Non-Primitive Reference type testing.
+TODO: Example-4: Now we are testing on Object Type Validation Error.
 */
 
-// Example-4: Non-Primitive Reference Types
+// valid Type Validation
 
-let dev = {role: "Developer"};
-let dev2 = dev; // Copying the reference of dev to dev2
-console.log(dev, dev2); // Output: { role: 'Developer' } { role: 'Developer' }
-dev2.role = "FullStack"; // Modifying the role property of dev2
-console.log(dev, dev2); // Output: { role: 'FullStack' } { role: 'FullStack' }
-
-// Both dev and dev2 reflect the change because they reference the same object
+function getPrice(product){
+    if(typeof product !== 'object' || product === null){
+        return "Please provide valid product object";
+    }
+    if(typeof product.price !== 'number'){
+        return "Please provide valid price in product object";
+    }
+    const price = product.price;
+    return price;
+}
+const product1 = {name: "Laptop", price: 1000};
+const output = getPrice(product1);
+console.log(output); // 1000
+// invalid Type Validation
+const product2 = {name: "Laptop", price: "1000"};
+const output2 = getPrice(product2);
+console.log(output2); // Please provide valid price in product object

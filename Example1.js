@@ -1,12 +1,18 @@
 /*
-TODO: Example-1: Just Testing Js core concepts javaScript facility checked.
+TODO: Example-1: Now we are testing on Type Validation Error.
 */
 
-// Example-1: 
+// valid Type Validation
 
-let data = 42;
-data = "A string now"; // Reassigning to a string
-data = true; // Reassigning to a boolean
-data = [1, 2, 3]; // Reassigning to an array
-data = { key: "value" }; // Reassigning to an object
-console.log(data); // Output: { key: 'value' }
+function sum(num1,num2){
+    if(typeof num1 !== 'number' || typeof num2 !== 'number'){
+        return "Please provide valid numbers";
+    }
+    const result = num1 + num2;
+    return result;
+}
+const output = sum(10,20);
+console.log(output); // 30
+// invalid Type Validation
+const output2 = sum(10,'20');
+console.log(output2); // Please provide valid numbers
