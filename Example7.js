@@ -1,16 +1,28 @@
 /*
-TODO: Example-7: Now we are testing here js core concept undefined vs null. here we are testing simple understanding of the undefined.
+TODO: Example-7: Now we are Reference Errors in JavaScript. Below is an example demonstrating how to handle this error effectively.
+1. Reference Error Example:
+   In this example, we will demonstrate a common reference error and how to fix it.
 */
 
-// Example-7: Understanding undefined vs null
+// Reference Error Example
+try {
+    console.log(undefinedVariable); // Reference Error: undefinedVariable is not defined
+} catch (error) {
+    console.log("Reference Error: " + error.message);
+}
 
-let first;
-console.log("Value of first:", first); // Output: Value of first: undefined
-// first is undefined because it has been declared but not assigned a value yet
-
-let second = null;
-console.log("Value of second:", second); // Output: Value of second: null
-// second is null because it has been explicitly assigned the value null, indicating the absence of any object value 
-console.log("Type of first:", typeof first); // Output: Type of first: undefined
-console.log("Type of second:", typeof second); // Output: Type of second: object
-// Note: In JavaScript, the type of null is considered an object due to a historical bug in the language design 
+// Fixed Reference Error by defining undefinedVariable
+const undefinedVariable = "Now I am defined!";
+console.log(undefinedVariable); // Now I am defined!
+/*
+2. Another Reference Error Example:
+   In this example, we will demonstrate another common reference error and how to fix it.   */
+// Another Reference Error Example
+function greet() {  
+    return "Hello, " + name + "!"; // Reference Error: name is not defined
+}
+try {
+    console.log(greet());
+} catch (error) {
+    console.log("Reference Error: " + error.message);
+}
