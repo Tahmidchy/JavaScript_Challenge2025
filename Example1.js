@@ -1,18 +1,17 @@
 /*
-TODO: Example-1: Now we are testing on Type Validation Error.
+TODO: Example-1: Now we are testing Single-threaded Execution Context in JavaScript.
 */
 
-// valid Type Validation
+// Now we are testing Single-threaded Execution Context in JavaScript.
 
-function sum(num1,num2){
-    if(typeof num1 !== 'number' || typeof num2 !== 'number'){
-        return "Please provide valid numbers";
-    }
-    const result = num1 + num2;
-    return result;
+console.log(1); // Synchronous
+console.log(2); // Synchronous
+doSomething(); // Synchronous function call
+console.log(4); // Synchronous
+console.log(5); // Synchronous
+console.log(6); // Synchronous
+
+function doSomething() {
+    console.log(3); // Synchronous
 }
-const output = sum(10,20);
-console.log(output); // 30
-// invalid Type Validation
-const output2 = sum(10,'20');
-console.log(output2); // Please provide valid numbers
+

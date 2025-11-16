@@ -1,18 +1,24 @@
 /*
-TODO: Example-2: Now we are testing on Type Validation Error.
+TODO: Example-2: Now we are testing Synchronous with setTimeout in JavaScript.
 */
 
-// valid Type Validation
+// Now we are testing Synchronous with setTimeout in JavaScript.
 
-function Multiply(num1,num2){
-    if(typeof num1 !== 'number' || typeof num2 !== 'number'){
-        return "Please provide valid numbers";
-    }
-    const result = num1 * num2;
-    return result;
-}
-const output = Multiply(10,20);
-console.log(output); // 200
-// invalid Type Validation
-const output2 = Multiply(10,'20');
-console.log(output2); // Please provide valid numbers
+console.log('A'); // Synchronous
+setTimeout(() => {
+    console.log('B'); // Asynchronous (after 0 ms)
+},1000);
+console.log('C'); // Synchronous
+console.log('D'); // Synchronous
+setTimeout(() => {
+    console.log('E'); // Asynchronous (after 0 ms)
+},0);
+console.log('F'); // Synchronous
+
+// Output:
+// A
+// C
+// D
+// F
+// E
+// B
