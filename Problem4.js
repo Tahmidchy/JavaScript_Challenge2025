@@ -1,15 +1,16 @@
 /*
-TODO: Example-4 : There will be some theoretical talk here about errors, the answers to those will be written here, no code here means the next 3 problems.
+TODO: The console will log this message every two seconds and stop after displaying it 6 times." I am Learning JavaScript"
 */
 
-// Question-1: যদি কোন লাইন এর শেষে সেমিকোলন না দিস তাহলে কি এরর দিবে ?
+// Solution:
 
-// Answer-1: দিবে , এই টা সিনটেক্স এরর হিসাবে গণ্য হবে ,সেমিকোলন , ব্র্যাকেট , বানান ভুল করলে এই সিনটেক্স এরর দেয় , অথাৎ খুচরো কিছু ভুল ওরে ফেলি যেগুলো জাভাস্ক্রিপ্ট ঠিকমতো প্রসেস করতে পারে না 
-
-// Question-2 : Reference Error কখন দিবে ?
-
-// Answer-2: রেফারেন্স এরর তখন দিবে যখন কোন ভেরিয়েবল বা ফাংশন ডিক্লেয়ার না করে সেটাকে কল করা হয় , অর্থাৎ কোন আইডেন্টিফায়ারকে জাভাস্ক্রিপ্ট চিনতে না পারলে রেফারেন্স এরর দেয় 
-
-// Question-3: Syntax Error আর Type Error এর ডিফারেন্স কি ?
-
-// Answer-3: সিনট্যাক্স এরর তখন হয় যখন কোডের গঠন বা কাঠামো ভুল হয় , যেমন সেমিকোলন না দেয়া , ব্র্যাকেট না দেয়া ইত্যাদি । আর টাইপ এরর তখন হয় যখন কোন ভেরিয়েবলের ডাটা টাইপ এর সাথে অপারেশন মেলেনা , যেমন একটি নাম্বার টাইপ ভেরিয়েবলে স্ট্রিং টাইপ এর অপারেশন প্রয়োগ করা ।
+let count = 0;
+const intervalId = setInterval(() => {
+    console.log("I am Learning JavaScript"); // Asynchronous (every 2 seconds)
+    count++;
+    // Stop the interval after logging 6 times
+    if (count === 6) {
+        clearInterval(intervalId);
+    }
+},2000);
+console.log('Learning started'); // Synchronous
