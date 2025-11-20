@@ -1,16 +1,8 @@
-/*
-TODO: Example-8: Now we are testing on Logical Errors and Range Errors in JavaScript. Below are two examples demonstrating how to handle these errors effectively.
-1. Logical Error Example:
-   In this example, we will demonstrate a common logical error and how to fix it.       
-*/
+// In here we are using JavaScript destructuring  Array 
 
-// Logical Error Example
+// Solution 8:
 
-const num1 = 10;
-const num2 = 0;
-const sum = num1 - num2; // Logical Error: Should be addition instead of subtraction
-console.log("The sum is: " + sum); // Incorrect output
-
-// Fixed Logical Error
-const correctSum = num1 + num2; // Corrected to addition
-console.log("The correct sum is: " + correctSum); // Correct output
+const numbers = [1,2,3,4,5];
+const [,second, fourth] = numbers;
+console.log(second); // Output: 2
+console.log(fourth); // Output: 4

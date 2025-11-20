@@ -1,19 +1,10 @@
-/*
-TODO: Example-3: Now we are testing Synchronous with setInterval in JavaScript.
-*/
+// In here we testing javaScript Object destructuring with renamed properties and default values.
 
-// Now we are testing Synchronous with setInterval in JavaScript.
+// Solution 3:
 
-console.log('X'); // Synchronous
-setInterval(() => {
-    console.log('Y'); // Asynchronous (every 1 second)
-},1000);
-console.log('Z'); // Synchronous
-
-// Output:
-// X
-// Z
-// Y
-// Y
-// Y
-// ... (Y continues to log every second)
+const book= {
+    title: "1984", author: "George Orwell"};
+    const {title: BookTitle, author: BookAuthor} = book;
+//result
+console.log(BookTitle); // Output: 1984
+console.log(BookAuthor); // Output: George Orwell

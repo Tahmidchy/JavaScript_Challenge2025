@@ -1,24 +1,15 @@
-/*
-TODO: Example-2: Now we are testing Synchronous with setTimeout in JavaScript.
-*/
+// In here Javascript destructuring is used for changed new property names and default values.
 
-// Now we are testing Synchronous with setTimeout in JavaScript.
+// Solution 2:
 
-console.log('A'); // Synchronous
-setTimeout(() => {
-    console.log('B'); // Asynchronous (after 0 ms)
-},1000);
-console.log('C'); // Synchronous
-console.log('D'); // Synchronous
-setTimeout(() => {
-    console.log('E'); // Asynchronous (after 0 ms)
-},0);
-console.log('F'); // Synchronous
+const actor = {
+    name: 'Tom Cruise',
+    age: 60,
+    money: 50000000,
+}
 
-// Output:
-// A
-// C
-// D
-// F
-// E
-// B
+const {name, age: boyos, Money, phone} = actor;
+//result
+console.log(name);
+console.log(boyos);
+console.log(Money); // Output: undefined, as Money is not defined in the actor object

@@ -1,17 +1,16 @@
-/*
-TODO: Example-1: Now we are testing Single-threaded Execution Context in JavaScript.
-*/
+// In here testing how Destructuring works in JavaScript.
 
-// Now we are testing Single-threaded Execution Context in JavaScript.
+// Solution 1:
 
-console.log(1); // Synchronous
-console.log(2); // Synchronous
-doSomething(); // Synchronous function call
-console.log(4); // Synchronous
-console.log(5); // Synchronous
-console.log(6); // Synchronous
-
-function doSomething() {
-    console.log(3); // Synchronous
+const actor = {
+    name: 'Tom Cruise',
+    age: 60,
+    movies: ['Top Gun', 'Mission Impossible'],
+    money: 50000000
 }
-
+// Destructuring the object to get the values of name, age, movies and money
+const name = actor.name;
+const age = actor.age;
+const movies = actor.movies;
+const money = actor.money;
+console.log(name, age, movies, money); // Output: Tom Cruise 60 [ 'Top Gun', 'Mission Impossible' ] 50000000

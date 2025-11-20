@@ -1,16 +1,9 @@
-/*
-TODO: Example-4: Now we are testing Synchronous with setInterval in JavaScript.
-*/
+//In here we are using JavaScript Destructing with Array
 
-// Now we are testing Synchronous with setInterval in JavaScript.
+// Solution 4:
 
-let num = 0;
-const intervalId = setInterval(() => {
-    num++;
-    console.log(num); // Asynchronous (every 1 second)
-    // Stop the interval after logging 5 times
-    if (num === 5) {
-        clearInterval(intervalId);
-    }
-},1000);
-console.log('Counting started'); // Synchronous
+const numbers = [45,99];
+const [first, second] = numbers;
+//result
+console.log(first); // Output: 45
+console.log(second); // Output: 99
