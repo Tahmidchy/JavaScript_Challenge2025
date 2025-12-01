@@ -1,11 +1,9 @@
-/*
-TODO: Problem-7: Separate the name and city from the person object. If there is no phone, set the default value N/A , const person ={ name:"Rahim",city:"Dhaka"} 
-*/
+/* 
+TODO: Problem-7: Declare a variable named age to hold your current age, then print its value to the console. Next, assign a new value to the age variable and print it again.
+ */
 
-// Solution:
-
-const person = { name: "Rahim", city: "Dhaka" };
-const { name, city, phone = "N/A" } = person;
-console.log(name); // Output: Rahim
-console.log(city); // Output: Dhaka
-console.log(phone); // Output: N/A
+//Solution
+let age = 25;
+console.log(age);
+age = 30;
+console.log(age);

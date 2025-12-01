@@ -1,9 +1,7 @@
 /*
-TODO: Program-8: Check if const language = 'JavaScript'; contains script by ignoring case
-*/
-
-//Solution: 
-
-const language = 'JavaScript';
-const containsScript = language.toLowerCase().includes('script'); // Check if 'script' is in the string, ignoring case
-console.log(containsScript); // Output: true
+TODO: Problem-8: You have 500 taka in your pocket. You assign a value of 150 taka to a variable called pocketMoney and print it to see which value is displayed last.
+ */
+// Solution: 
+let pocketMoney = 500;
+pocketMoney -= 150;
+console.log(pocketMoney); //Output 350

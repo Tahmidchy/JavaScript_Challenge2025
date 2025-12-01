@@ -1,13 +1,7 @@
 /*
-TODO: Problem-2: Create a function with setTimeout() that will print "I wasted 3 seconds of my life by looking at the screen and doing nothing  " after 3 seconds.
-*/
+TODO: Problem-2: Declare a variable named "learning" and set its value to true. Use the typeof operator to determine its output.
+ */
+//Solution: 
 
-// Solution: 
-
-function wasteTime() {
-    setTimeout(function() {
-        console.log("I wasted 3 seconds of my life by looking at the screen and doing nothing");
-    }, 3000);
-}
-
-wasteTime();
+let learning = true;
+console.log(typeof learning); // Output: boolean

@@ -1,9 +1,8 @@
-/*
-TODO: const text = 'NodeJs'; Check if the first character of this string is uppercase.
-*/
+/* 
+TODO: Problem-9: You plan to study for 4 hours. Create a variable called studyTime, assign a value to studyTime, then assign a new value to it and check the console for the output.
+ */
 
-// Solution: 
-
-const text = 'NodeJs';
-const isFirstCharUppercase = text.charAt(0) === text.charAt(0).toUpperCase(); // Check if the first character is uppercase
-console.log(isFirstCharUppercase); // Output: true
+//Solution: 
+let studyTime = 4; // Assign a value to studyTime
+studyTime -= 2; // Assign a new value to studyTime
+console.log(studyTime); // Output: 2

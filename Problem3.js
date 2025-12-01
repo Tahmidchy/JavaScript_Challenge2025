@@ -1,16 +1,8 @@
 /*
-TODO: Problem-3: It will display one number at a time every two seconds, starting at 131 and increasing by two each time.
-*/
+TODO: Problem-3: Declare a variable named megaCity and assign it the value "Dhaka", then use typeof to determine the type of the value stored in megaCity.
+ */
 
-// Solution: 
+//Solution : 
 
-let number = 131;
-const intervalId = setInterval(() => {
-    number += 2;
-    console.log(number); // Asynchronous (every 2 seconds)
-    // Stop the interval after logging 5 times
-    if (number === 215) {
-        clearInterval(intervalId);
-    }
-},2000);
-console.log('Number sequence started'); // Synchronous
+let megaCity = "Dhaka";
+console.log(typeof megaCity); // Output: string

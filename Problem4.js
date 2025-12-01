@@ -1,16 +1,8 @@
 /*
-TODO: The console will log this message every two seconds and stop after displaying it 6 times." I am Learning JavaScript"
-*/
+TODO: Problem-4: In the scorching heat, I placed my hand on my forehead and felt a high fever. At this moment, I have declared a variable named `temperature`, which has a value of 102.5. Now, if I check this variable using `typeof`, what type of variable will it be?
+ */
 
-// Solution:
+//Solution:
 
-let count = 0;
-const intervalId = setInterval(() => {
-    console.log("I am Learning JavaScript"); // Asynchronous (every 2 seconds)
-    count++;
-    // Stop the interval after logging 6 times
-    if (count === 6) {
-        clearInterval(intervalId);
-    }
-},2000);
-console.log('Learning started'); // Synchronous
+let temperature = 102.5;
+console.log(typeof temperature); // Output: "number"
