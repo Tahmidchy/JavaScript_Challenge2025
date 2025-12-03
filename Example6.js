@@ -1,9 +1,6 @@
-// In here we are using JavaScript destructuring for using Function arguments
+// TODO: Example-6: Template String 
 
-// Solution 6:
-
-function introduce({name,age}){
-    console.log(`Name: ${name}, Age: ${age}`);
-}
-const user = { name: "Alice", age: 30 , hobby: "Reading"};
-introduce(user); // Output: Name: Alice, Age: 30
+const first = "John";
+const last = "Doe";
+const fullName = first + " " + last;
+console.log(fullName); // Output: John Doe

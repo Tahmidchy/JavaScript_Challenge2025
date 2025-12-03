@@ -1,15 +1,7 @@
-// In here Javascript destructuring is used for changed new property names and default values.
+/*
+TODO: Example Test Here: Using Let keyword.
+*/
 
-// Solution 2:
-
-const actor = {
-    name: 'Tom Cruise',
-    age: 60,
-    money: 50000000,
-}
-
-const {name, age: boyos, Money, phone} = actor;
-//result
-console.log(name);
-console.log(boyos);
-console.log(Money); // Output: undefined, as Money is not defined in the actor object
+const numbers = [1, 2, 3, 4, 5];
+numbers[1] = 10; // Changing the second element
+console.log(numbers); // Output: [1, 10, 3, 4, 5] // An interview question this type ask me i can't reply this so that's i am studying this type of question.

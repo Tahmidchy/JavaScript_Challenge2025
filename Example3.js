@@ -1,10 +1,9 @@
-// In here we testing javaScript Object destructuring with renamed properties and default values.
+// TODO: Example-3: 
 
-// Solution 3:
-
-const book= {
-    title: "1984", author: "George Orwell"};
-    const {title: BookTitle, author: BookAuthor} = book;
-//result
-console.log(BookTitle); // Output: 1984
-console.log(BookAuthor); // Output: George Orwell
+function add( num1,num2){
+    const result = num1 + num2;
+    return result;
+};
+// Example usage:
+const sum = add(5, 10);
+console.log(sum); // Output: 15

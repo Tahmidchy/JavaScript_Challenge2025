@@ -1,16 +1,7 @@
-// In here testing how Destructuring works in JavaScript.
+//TODO: Example Test Here:
 
-// Solution 1:
+const money = 25;
+const rich = money + 100;
+console.log(rich); // Output: 125
 
-const actor = {
-    name: 'Tom Cruise',
-    age: 60,
-    movies: ['Top Gun', 'Mission Impossible'],
-    money: 50000000
-}
-// Destructuring the object to get the values of name, age, movies and money
-const name = actor.name;
-const age = actor.age;
-const movies = actor.movies;
-const money = actor.money;
-console.log(name, age, movies, money); // Output: Tom Cruise 60 [ 'Top Gun', 'Mission Impossible' ] 50000000
+// In here using Const keyword to declare a variable named money and assign it the value of 25. Then, we create another variable named rich and assign it the value of money plus 100. Finally, we log the value of rich to the console, which will output 125.
