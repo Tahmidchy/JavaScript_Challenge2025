@@ -1,7 +1,14 @@
-//TODO: Example Test Here:
+/*
+TODO: Example-1: Now we are testing the JSON Converter 
+*/
 
-const money = 25;
-const rich = money + 100;
-console.log(rich); // Output: 125
+// Solution code:
 
-// In here using Const keyword to declare a variable named money and assign it the value of 25. Then, we create another variable named rich and assign it the value of money plus 100. Finally, we log the value of rich to the console, which will output 125.
+const user = {
+    name: "John Doe",
+    age: 30,
+    city: "New York"
+};
+// Convert the user object to a JSON string
+const jsonString = JSON.stringify(user);
+console.log("JSON String:", jsonString);

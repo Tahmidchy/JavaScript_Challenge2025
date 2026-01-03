@@ -1,7 +1,20 @@
 /*
-TODO: Example Test Here: Using Let keyword.
+TODO: Example-2: Now we are testing the JSON data converting to javascript string object.
 */
 
-const numbers = [1, 2, 3, 4, 5];
-numbers[1] = 10; // Changing the second element
-console.log(numbers); // Output: [1, 10, 3, 4, 5] // An interview question this type ask me i can't reply this so that's i am studying this type of question.
+// Solution:
+
+const shop = {
+    owner: 'Alia',
+    address: {
+        street: 'Kumarpara',
+        city: 'Kushtia',
+        country: 'Bangladesh'
+    },
+    products: ['laptop', 'mobile', 'watch'],
+    revenue: 45000,
+    isOpen: true,
+    isNew: false
+};
+const shopJSON = JSON.stringify(shop);
+console.log(shopJSON);

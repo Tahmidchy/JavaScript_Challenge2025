@@ -1,12 +1,23 @@
-//TODO: Using default parameters in a function 
+/*
+TODO: Example-5: Create a promise new example here.
+*/
 
-function add(num1 = 0, num2 = 0){
-    const result = num1 + num2;
-    console.log(num1, num2, result);
-    return result;
-};
-// Example usage:
-const sum = add();
-console.log(sum); // Output: 0 (0 + 0)
-const total = add(5, 10);
-console.log(total); // Output: 15 (5 + 10)
+// Solution:
+
+const getUsers = new Promise((resolve, reject) => {
+    const usersAvailable = true;
+    const users = ["john", "jane", "doe"];
+
+    if (usersAvailable) {
+        resolve(users);
+    }
+    else {
+        reject("No users available.");
+    }
+});
+
+getUsers.then((users) => {
+    console.log("Users:", users);
+}).catch((error) => {
+    console.log(error);
+});
