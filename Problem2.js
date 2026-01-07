@@ -1,7 +1,18 @@
 /*
-TODO: Problem-2: Declare a variable named "learning" and set its value to true. Use the typeof operator to determine its output.
- */
-//Solution: 
+TODO: Problem-2 : Create an object, where there will be a user, the user will have name, email, address, and an order history, that order history will have at least three products, convert the entire object to a JSON string using JSON.stringify() method.
+*/
 
-let learning = true;
-console.log(typeof learning); // Output: boolean
+// Solution:
+
+const user= {
+    name: 'Tahmid',
+    email: 'tahmidchy@hotmail.com',
+    address: {
+        street: 'Lakeview',
+        city: 'Dhaka',
+        country: 'Bangladesh'
+    },
+    orderHistory: ['laptop', 'headphones', 'keyboard'],
+};
+const userJSON = JSON.stringify(user);
+console.log(userJSON);

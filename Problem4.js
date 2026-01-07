@@ -1,8 +1,14 @@
 /*
-TODO: Problem-4: In the scorching heat, I placed my hand on my forehead and felt a high fever. At this moment, I have declared a variable named `temperature`, which has a value of 102.5. Now, if I check this variable using `typeof`, what type of variable will it be?
- */
+TODO: Problem-4: Create a weather object that contains city, temperature, humidity and forecast (array), forecast array contains at least 7 days of possible temperatures, convert it to zone
+*/
 
-//Solution:
+// Solution: 
 
-let temperature = 102.5;
-console.log(typeof temperature); // Output: "number"
+const weather = {
+    city: 'San Francisco',
+    temperature: 68,
+    humidity: 75,
+    forecast: [70, 72, 68, 65, 74, 73, 71]
+};
+const weatherJSON = JSON.stringify(weather);
+console.log(weatherJSON);   
