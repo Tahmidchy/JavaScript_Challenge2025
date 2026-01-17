@@ -1,18 +1,13 @@
-/*
-TODO: Problem-2 : Create an object, where there will be a user, the user will have name, email, address, and an order history, that order history will have at least three products, convert the entire object to a JSON string using JSON.stringify() method.
+/* 
+TODO:Problem-2: We know that 1 kilowatt hour is equal to 860 kilocalories. So write a function that will convert any kilowatt hour into kilocalories.
 */
 
-// Solution:
+// Solution: 
 
-const user= {
-    name: 'Tahmid',
-    email: 'tahmidchy@hotmail.com',
-    address: {
-        street: 'Lakeview',
-        city: 'Dhaka',
-        country: 'Bangladesh'
-    },
-    orderHistory: ['laptop', 'headphones', 'keyboard'],
-};
-const userJSON = JSON.stringify(user);
-console.log(userJSON);
+function kilowattHourToKilocalories(kilowattHour) {
+    // 1 kilowatt hour = 860 kilocalories
+    const kilocaloriesInKilowattHour = 860;
+    return kilowattHour * kilocaloriesInKilowattHour;
+}
+// Test the function
+console.log(kilowattHourToKilocalories(5));

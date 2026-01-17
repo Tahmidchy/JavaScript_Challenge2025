@@ -1,14 +1,11 @@
-/*
-TODO: Problem-5: For movies, there will be movie details like -title, release years, actors and ratings. Actors will be an array (where the actors will be named) and ratings will be a number, then convert it to JSON . stringfy, after converting it, convert it back to JavaScript object like this
+/* 
+TODO: Problem-5: Write a function that converts inches to centimeters. We know that 1 inch is equal to 2.54.
 */
 
-// Solution:
+// Solution: 
 
-const movie = {
-    title: 'Inception',
-    releaseYear: 2010,
-    actors: ['Leonardo DiCaprio', 'Joseph Gordon-Levitt', 'Ellen Page'],
-    ratings: 8.8
+function inchesToCentimeters(inches){
+    return inches * 2.54;
 }
-const movieJSON = JSON.stringify(movie);
-console.log(movieJSON);
+// testing function 
+console.log(inchesToCentimeters(5)); // Output: 12.7

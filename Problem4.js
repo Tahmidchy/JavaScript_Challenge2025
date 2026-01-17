@@ -1,14 +1,13 @@
 /*
-TODO: Problem-4: Create a weather object that contains city, temperature, humidity and forecast (array), forecast array contains at least 7 days of possible temperatures, convert it to zone
+TODO: Problem-4: Write a function that converts centimeters to meters. You know that 1 meter is equal to 100 centimeters.
 */
 
 // Solution: 
 
-const weather = {
-    city: 'San Francisco',
-    temperature: 68,
-    humidity: 75,
-    forecast: [70, 72, 68, 65, 74, 73, 71]
-};
-const weatherJSON = JSON.stringify(weather);
-console.log(weatherJSON);   
+function centimetersToMeters(centimeters) {
+    // We know that 1 meter is equal to 100 centimeters, so we can divided the centimeters by 100 to get the meters.
+    let meters = centimeters / 100;
+    return meters;
+}
+// Test the function
+console.log(centimetersToMeters(100));  // Output: 1
