@@ -1,11 +1,11 @@
 /*
-TODO: Problem-7: Create a function to convert yards to meters. 1 yard = 0.91 meters
+TODO: Problem-7: Write a program that checks if you are over 18 years old and over 60 inches tall, then push the car, and if not, sit in the car.
 */
 
-// Solution: 
-
-function yardsToMeters(yards) {
-    return yards * 0.91;
+const my_age = 25;
+const my_height = 72;
+if(my_age > 18 && my_height > 60) {
+    console.log("You can push the car");
+} else{
+    console.log("You can sit in the car");
 }
-// Test the function
-console.log(yardsToMeters(10)); // Output: 9.1

@@ -1,15 +1,12 @@
-/* 
-TODO: Problem-1: You know that there are 1760 yards in a mile. So write a function that can find out how many yards are in 13 miles.
-
+/*
+TODO: Problem-1: Your mother has given you a condition that if you come home before 6 pm, she will feed you an evening snack, and if you are late, she will punish you. Solve the code with this condition.
 */
+// Solution: 
 
-// Solution :
+let time = 6;
 
-function YeardsInMiles(miles){
-    // 1 mile = 1760 yards
-    const YeardsInMiles = 1760;
-    return miles * yeardsInMiles;
+if (time <= 6) {
+    console.log("You will get an evening snack");
+} else {
+    console.log("You will be punished");
 }
-// Test the function
-console.log(YeardsInMiles(13));
-

@@ -1,13 +1,12 @@
-/* 
-TODO: Problem-3: Write a function to convert hours to seconds. If I give it hours, it will convert it to seconds.
-*/ 
+/*
+TODO: Problem-3: If you run 5 kilometers, I will give you chocolate. If you don't run, you will get fat. Write a program for this condition.
+*/
 
 // Solution: 
 
-function hoursToSeconds(hours) {
-    // 1 hour = 3600 seconds
-    const secondsInHours = 3600;
-    return hours * secondsInHours;
+const runingOutside = true;
+if(runingOutside == true){
+    console.log("You will get chocolate");
+} else{
+    console.log("You will get fat");
 }
-// Test the function with some examples:
-console.log(hoursToSeconds(1)); // Output: 3600

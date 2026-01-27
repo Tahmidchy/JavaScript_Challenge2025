@@ -1,13 +1,12 @@
-/* 
-TODO:Problem-2: We know that 1 kilowatt hour is equal to 860 kilocalories. So write a function that will convert any kilowatt hour into kilocalories.
+/*
+TODO: Problem-2: A mobile application will display "Welcome!" as the output if it is successful in logging in and "Get Lost" if it fails. Write a program for this condition.
 */
 
-// Solution: 
+//Solution: 
 
-function kilowattHourToKilocalories(kilowattHour) {
-    // 1 kilowatt hour = 860 kilocalories
-    const kilocaloriesInKilowattHour = 860;
-    return kilowattHour * kilocaloriesInKilowattHour;
+const loginStatus = true;
+if(loginStatus == true){
+    console.log("Welcome!");
+} else {
+    console.log("Get Lost");
 }
-// Test the function
-console.log(kilowattHourToKilocalories(5));
