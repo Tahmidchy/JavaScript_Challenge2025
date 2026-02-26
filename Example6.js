@@ -1,6 +1,22 @@
-// TODO: Example-6: Template String 
+/*
+TODO: Example-6: Now we are testing on promise.all() method.
+*/
 
-const first = "John";
-const last = "Doe";
-const fullName = first + " " + last;
-console.log(fullName); // Output: John Doe
+// Solution:
+
+const moneyRequest = new Promise((resolve, reject)=>{
+    setTimeout(()=> resolve("Request submitted!"),1000);
+});
+const transferMoney = new Promise((resolve,reject)=>{
+    setTimeout(()=> resolve("Money transferred!"),2000);
+});
+const payFee = new Promise((resolve,reject)=> {
+    setTimeout(()=> resolve("Fee paid!"),1500);
+});
+Promise.all([moneyRequest, transferMoney, payFee])
+.then((result)=>{
+    console.log(result);
+})
+.catch((error)=>{
+    console.log(error);
+});

@@ -1,12 +1,17 @@
 /*
-TODO: Some Info-REST operators are very important operators. REST operators allow many arguments or properties or elements to be put together, which makes complex tasks and many others easier. We will learn about the use of REST operators through 3 examples in a row.
+TODO: Now we are testing on the JSON Create/Post API for Promises.
 */
 
-// TODO: Example 9 - REST operator with An Array
-
-// Solution: 
-
-const [first, second, ...rest] = [1, 2, 3, 4, 5];
-console.log(first);  // Output: 1
-console.log(second); // Output: 2
-console.log(rest);   // Output: [3, 4, 5]
+const url = 'https://jsonface.com/api/examples/promise';
+const user = {name: 'John Doe',email:'john.doe@example.com'}
+const options = {
+    method: 'POST',
+    body: JSON.stringify(user),
+    headers: {
+        'Content-Type': 'application/json'
+    },
+}
+fetch(url, options)
+    .then(res => res.json())
+    .then(data => console.log(data))
+    .catch(error => console.error(error));

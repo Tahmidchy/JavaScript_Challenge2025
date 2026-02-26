@@ -1,9 +1,6 @@
-// In here we are Using JavaScript destructing with Function arguments
+// Now we are testing on Fetch().json with promise
 
-// Solution 7:
-
-function sum ([a,b]) {
-    return a + b;
-}
-// In here we are using JavaScript destructing with Function arguments
-console.log(sum([5, 10])); // Output: 15
+fetch('https://jsonface.com/posts')
+    .then(response => response.json())
+    .then(data => console.log(data))
+    .catch(error => console.error('Error fetching JSON:', error));

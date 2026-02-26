@@ -1,8 +1,10 @@
-// In here we are using JavaScript destructuring  Array 
+/*
+TODO: We are testing on the JSON Face API for Promises.
+*/
 
-// Solution 8:
+const url = 'https://jsonface.com/api/examples/promise';
 
-const numbers = [1,2,3,4,5];
-const [,second, fourth] = numbers;
-console.log(second); // Output: 2
-console.log(fourth); // Output: 4
+fetch(url)
+    .then((res) => res.json())
+    .then((data) => console.log(data))
+    .catch((error) => console.error('Error fetching data:', error));
