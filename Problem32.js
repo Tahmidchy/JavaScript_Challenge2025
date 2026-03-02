@@ -1,8 +1,22 @@
 /*
-TODO: Problem-32: If the value of the sunny variable is false, then "stay home" will be logged to the console. Problem solve by ternary operator
+TODO: Problem-32: প্রোফাইল সিঙ্গেল নাকি মেরিড , এই টাইপ এর  ডাটা চেঞ্জ করলে PUT না PATCH হবে ?
+
 */
 
-//Solution: 
+// Create a new Promise to fetch data from a JSON file
 
-const sunny = false;
-const decision  = sunny === false ? console.log("Stay home") : console.log("Go to out side");
+const url = 'https://example.com/api/users/1';
+const updatedProfile = {
+    maritalStatus: 'Married'
+};
+const options = {
+    method: 'PATCH',
+    body: JSON.stringify(updatedProfile),
+    headers: {  
+        'Content-Type': 'application/json',
+    },
+};
+fetch(url, options)
+    .then((res) => res.json())
+    .then((data) => console.log(data))
+    .catch((error) => console.error('Error:', error));

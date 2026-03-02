@@ -1,8 +1,7 @@
 /*
-TODO: Problem-33: If the value of the Expensive variable is false, then the console will log "I will buy this item." Problem solved by ternary operator
+TODO: Problem-33: ডাটাবেজে নতুন ইনফরমেশন যোগ করার জন্য কোন HTTP মেথড ব্যাবহারিত হয়  
+
 */
 
-// Solution: 
-
-const Expensive = false;
-const buy = Expensive === false ? console.log("I will buy this item."): console.log(" Sorry It's So expensive I can't afford this.");
+// Answer: 
+// POST মেথড ব্যাবহারিত হয় নতুন ইনফরমেশন যোগ করার জন্য ।

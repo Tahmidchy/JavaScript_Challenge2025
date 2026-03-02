@@ -1,17 +1,8 @@
 /*
-TODO: Problem-28: Create a gadget object with name: iphone, price: 120000, and color: black. Delete the price using delete. Then try to access the price property and see if it works.
+TODO: Problem-28: fetch ফাংশন থেকে রিটার্ন করা প্রমিজের মাধ্যমে রেসপন্স জেসন কল করে , ডাটা কনভার্ট কেন করা হয় 
+
 */
 
-// Solution:
+// Solution-28:
 
-const gadget = {
-    name: "iphone",
-    price: 120000,
-    color: "black"
-}
-delete gadget.price; // Delete the price property
-console.log(gadget.price); // Try to access the price property
-// Output: undefined  
-console.log(gadget); // Output: { name: "iphone", color: "black" }
-// The price property has been deleted, so accessing it returns undefined.
-// The price property has been deleted, so accessing it returns undefined.  
+/*fetch একটা ফাংশন যা একটা URL থেকে ডাটা নিয়ে আসে , এটি একটা রেসপন্স দিয়ে পরবর্তীতে টা JSON ফরম্যাটে কনভার্ট করে। */

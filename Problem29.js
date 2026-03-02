@@ -1,14 +1,5 @@
 /*
-TODO: Problem-29: Create an animal object with name: Tiger, location: Sundarbans. Now do something so that the location of the tiger is not changed.
+TODO: Problem-29: fetch why use?
 */
-
-// Solution:
-
-const animal = {
-    name: "Tiger",
-    location: "Sundarbans"
-}
-Object.freeze(animal); // Freeze the object to prevent any changes
-animal.location = "Amazon"; // Try to change the location property
-console.log(animal); // Output: { name: "Tiger", location: "Sundarbans" }
-// The location property remains unchanged because the object is frozen.
+// Solution-29: 
+/*fetch ফাংশন ব্যবহার করা হয় কারণ এটি একটি সহজ এবং কার্যকর উপায় প্রদান করে ওয়েব থেকে ডাটা নিয়ে আসার জন্য। এটি প্রমিজ ভিত্তিক, যা অ্যাসিঙ্ক্রোনাস অপারেশনকে সহজ করে তোলে এবং কোডকে আরও পরিষ্কার ও রিডেবল করে। এছাড়াও, fetch ফাংশনটি ব্রাউজার API এর অংশ হওয়ায় এটি ব্রাউজার সমর্থিত এবং অতিরিক্ত লাইব্রেরি ইনস্টল করার প্রয়োজন নেই।*/
